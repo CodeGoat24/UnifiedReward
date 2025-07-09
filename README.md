@@ -1,6 +1,6 @@
 
 <p align="center" width="100%">
-<img src="./docs/static/images/logo_resize.png"  width="80%" height="70%">
+<img src="./docs/static/images/logo_resize.png"  width="80%">
 </p>
 <div align="center">
     <h1 align="center"> Unified Reward Model for Multimodal Understanding and Generation
@@ -102,7 +102,7 @@ Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/t
 
 🔥🔥 We released Gradio for UnifiedReward-Think!
 <p align="left" width="100%">
-<img src="./docs/static/images/think/gradio_case.png"  width="80%" height="70%">
+<img src="./docs/static/images/think/gradio_case.png"  width="80%">
 </p>
 
 ## 🔥 News
