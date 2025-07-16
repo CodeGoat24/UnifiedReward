@@ -276,7 +276,7 @@ cd LLaMA-Factory
 pip install -e ".[torch,metrics]"
 ```
 
-Follow its README to prepare our released [datasets](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
+Follow this [README](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/README.md) ([Multimodal Image Dataset](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/mllm_demo.json)) to prepare our released [datasets](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
 
 2. Run the following command to train the SFT model.
 
