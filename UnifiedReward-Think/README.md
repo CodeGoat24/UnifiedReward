@@ -161,6 +161,8 @@ bash grpo.sh
 ### Qwen-based Training
 For cold start and rejection sampling, we adopt [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) training framework.
 
+Follow this [README](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/README.md) ([Multimodal Image Dataset](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/mllm_demo.json)) to prepare the datasets.
+
 For GRPO, we use [EasyR1](https://github.com/hiyouga/EasyR1) for efficient training.
 
 We also provide TRL-based GRPO code in `src/open_r1` directory.
