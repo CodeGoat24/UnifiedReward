@@ -41,29 +41,13 @@
 
 We release the **UnifiedReward** -- **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
 
-
-
 🔥🔥 We release UnifiedReward-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-32b)], the more powerful unified reward models built upon [Qwen2.5-VL-Instruct](https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5)!!
 
-🔥 We release vLLM inference code for UnifiedReward-qwen in `vllm_qwen` directory!
-
-🔥 We release SGLang inference code for UnifiedReward-llava in `sglang_llava` directory!
-
-😊 UnifiedReward has been adopted by the **Meta** team in their latest work, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589) !!
-
-😊 We appreciate the excellent work [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017), which provides further evidence of **the robustness and effectiveness of UnifiedReward in image generation RL** tasks.
-
-| Method     | HPS | ImageReward | UnifiedReward |
-|------------|-----------|-----------|-----------|
-|  Janus-Pro + DPO        | 77.3      | 77.7      | **80.0**      |
-| Janus-Pro + GRPO       | 79.2      | 79.3      | **81.0**      |
-| Janus-Pro + Best-of-4  | 82.1      | 82.4      | **84.5**      |
-
-😊 We appreciate [Flow-GRPO](https://github.com/yifan123/flow_grpo) team for using UnifiedReward-7B as their **image generation quality evaluation metric**!
+🔥 We release **SGLang** and **vLLM** inference code for our model in `sglang_llava` and `vllm_qwen` directories!
 
 😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models!!
 
-😊 We sincerely thank the [Hunyuan](https://hunyuan.tencent.com/) team of Tencent for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
+😊 We thank the [Hunyuan](https://hunyuan.tencent.com/) team for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
 | Model                | Alignment | Coherence | Style |
 |---------------------|------------------|-----------------------|------------------|
 | Flux-pro-ultra      | 3.6453           | 3.8193                | _3.4971_         |
@@ -72,6 +56,22 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 | OpenAI-GPT-image-1  | _3.6890_     | **3.8448**            | 3.4960           |
 | Imagen-3.0          | 3.6733           | 3.8027                | 3.4674           |
 | Seedream-3.0        | **3.6927**       | _3.8218_          | 3.4887           |
+
+### ✨ **Awesome Works using UnifiedReward**
+
+😊 Meta, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589).
+
+😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
+
+😊 Kuaishou&Tsinghua&CUHK, [Flow-GRPO: Training Flow Matching Models via Online RL](https://github.com/yifan123/flow_grpo). [![[code]](https://img.shields.io/github/stars/yifan123/flow_grpo)](https://github.com/yifan123/flow_grpo)
+
+
+😊 CUHK MMLab, [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017). [![[code]](https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT)](https://github.com/ZiyuGuo99/Image-Generation-CoT)
+| Method     | HPS | ImageReward | UnifiedReward |
+|------------|-----------|-----------|-----------|
+|  Janus-Pro + DPO        | 77.3      | 77.7      | **80.0**      |
+| Janus-Pro + GRPO       | 79.2      | 79.3      | **81.0**      |
+| Janus-Pro + Best-of-4  | 82.1      | 82.4      | **84.5**      |
 
 
 
