@@ -45,9 +45,7 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 
 🔥 We release **SGLang** and **vLLM** inference code for our model in `sglang_llava` and `vllm_qwen` directories!
 
-😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models!!
-
-😊 We thank the [Hunyuan](https://hunyuan.tencent.com/) team for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
+😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models, and the [Tencent Hunyuan](https://hunyuan.tencent.com/) team for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
 | Model                | Alignment | Coherence | Style |
 |---------------------|------------------|-----------------------|------------------|
 | Flux-pro-ultra      | 3.6453           | 3.8193                | _3.4971_         |
@@ -113,16 +111,12 @@ Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/t
 Please leave us a star ⭐ if you find our work helpful.
 - [2025/5] 🔥🔥 We released [UnifiedReward-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-32b)], the more powerful unified reward models built upon [Qwen2.5-VL-Instruct](https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5)!!(https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)! All its inference and evaluation codes are provided in `./inference_qwen` and `./benchmark_evaluation` directory, respectively.
 - [2025/5] 🔥🔥 We released [UnifiedReward-Think-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b), the first unified multimodal CoT reward model. See [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
-- [2025/4] 🔥🔥 We released [UnifiedReward-0.5B](https://huggingface.co/CodeGoat24/UnifiedReward-0.5b). Feel free to use it based on your needs.
 - [2025/4] 🔥🔥 We updated [UnifiedReward-7B](https://huggingface.co/CodeGoat24/UnifiedReward-7b), incorporating valuable feedback from the community, and released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5) by introducing pointwise scoring for generated images across three dimensions: alignment, coherence, and style, each rated on a continuous scale from 1 to 5.
   1. **Alignment** quantifies how well an image matches its prompt.
   2. **Coherence** assesses the logical consistency of the image and the absence of artifacts or visual glitches.
   3. **Style** reflects the visual appeal of the image, independent of the prompt.
 
   Welcome to try the latest version, and the inference code is in `inference_qwen/image_generation/qwen_point_score_ACS_image_generation.py` and `./inference/point_score_ACS_image_generation.py`.
-- [2025/3] 🔥🔥 We released all training [datasets](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede) and model [checkpoints](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
-- [2025/3] 🔥🔥 We released all training, inference, and evaluation code.
-- [2025/3] 🔥 We launched the [project page](https://codegoat24.github.io/UnifiedReward/) and [paper](https://arxiv.org/pdf/2503.05236).
 
 <img src=./docs/static/images/pipeline.png width="100%"/>
 
@@ -141,52 +135,6 @@ Please leave us a star ⭐ if you find our work helpful.
 |  [VisionReward](https://github.com/THUDM/VisionReward) | Point |√  | |√||
 |  [VideoReward](https://github.com/KwaiVGI/VideoAlign) | Point |  |  |√ ||
 |  UnifiedReward (Ours) | Pair/Point | √ | √ |√|√|
-
-<details>
-<summary>VLRewardBench Comparison Results</summary>
-
-| Models               | General | Hallu. | Reason. | Overall Accuracy | Macro Accuracy |
-|----------------------|---------|--------|---------|------------------|---------------|
-| Gemini-1.5-Pro      | 50.8    | 72.5   | 64.2    | 67.2         | 62.5          |
-| GPT-4o              | 49.1    | 67.6   | **70.5** | 65.8             | 62.4          |
-| LLaVA-Critic        | 47.4    | 38.5   | 53.8    | 46.9             | 46.6          |
-| OV-7B           | 32.2    | 20.1   | 57.1    | 29.6             | 36.5          |
-| **UnifiedReward**   | 76.5 | 58.1 | 65.1 | 67.5             | 66.6      |
-</details>
-
----
-
-<details>
-<summary>GenAI-Bench(Image) Comparison Results</summary>
-
-| Method            | GenAI-Bench |        |
-|------------------|------------|--------|
-|                  | tau        | diff   |
-| PickScore       | 53.2       | 67.2   |
-| HPSv2           | 51.6       | 68.4   |
-| ImageReward     | 47.8       | 65.0   |
-| VisionReward    | 46.8       | 66.4   |
-| OV-7B        | 39.7       | 53.2   |
-| **UnifiedReward** | 54.8  | 70.9 |
-
-</details>
-
----
-
-<details>
-<summary>GenAI-Bench(Video) and VideoGen-Reward Comparison Results</summary>
-
-| Method            | GenAI-Bench |        | VideoGen-Reward |        |
-|------------------|------------|--------|-----------------|--------|
-|                  | tau        | diff   | tau             | diff   |
-| VideoScore      | 46.2       | 70.6   | 42.1            | 49.9   |
-| LiFT            | 41.2       | 60.1   | 40.6            | 58.3   |
-| VisionReward    | 52.1       | 73.1   | 57.4            | 68.2   |
-| VideoReward     | 50.2       | 73.3   | 60.1            | 73.9   |
-| OV-7B        | 40.8       | 51.4   | 40.4            | 50.2   |
-| **UnifiedReward** | 60.7  | 77.2 | 66.6       | 79.3 |
-</details>
-
 
 
 
@@ -319,7 +267,10 @@ bash train.sh
 
 
 ## ✨ Direct Preference Optimization 
-### 🎨 Image and Video Understanding DPO
+
+<details>
+<summary>🎨 Image and Video Understanding DPO</summary>
+
 #### 1. Construct Preference data
 
 The data for preference data construction should adhere to the following structure:
@@ -365,9 +316,12 @@ bash dpo_image_understand_ov7b.sh
 # video understanding 
 bash dpo_video_understand_llava_video_7b.sh
 ```
+</details>
 
-### 🖼️ Image Generation DPO
-Prepare Environments
+<details>
+<summary>🖼️ Image Generation DPO</summary>
+    
+#### 0. Prepare Environments
 ```bash
 cd DiffusionDPO
 conda create -n diffdpo python=3.10 -y
@@ -415,16 +369,18 @@ Then start training:
 ```bash
 bash launchers/turbo_dpo.sh
 ```
+</details>
 
-### 🎬 Video Generation DPO
-Prepare Environments
+<details>
+<summary>🎬 Video Generation DPO</summary>
+    
+#### 0. Prepare Environments
 ```bash
 cd VideoDPO
 conda create -n videodpo python=3.10 -y
 conda activate videodpo
 pip install -r requirements.txt
 ```
-Prepare Checkpoints
 
 Run following instruction to download VideoCrafter checkpoints. 
 ```bash
@@ -474,7 +430,8 @@ Then start training:
 ```bash
 bash run.sh
 ```
-
+</details>
+    
 ## 🚀 Evaluation
 We provide several evaluation code in `./benchmark_evaluation` directory. 
 ### Reward model
