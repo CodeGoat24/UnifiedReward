@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style>
+  
+  <meta name="description" content="Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning">
+  <meta name="keywords" content="Reinforcement Learning, GRPO, Text-to-Image Generation, Preference Alignment">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pref-GRPO</title>
+
+
+  <link rel="shortcut icon" href="https://picx.zhimg.com/v2-cb40b1f8c3125f3cfb9a4538e1c0f2b7_l.jpg?source=32738c0c" type="image/x-icon">
+  <link href="./static/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/bulma.min.css">
+  <link rel="stylesheet" href="./static/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/academicons.min.css">
+  <link rel="stylesheet" href="./static/index.css">
+  <link rel="stylesheet" href="./static/leaderboard.css">
+
+  <script type="text/javascript" src="./static/sort-table.js" defer=""></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer="" src="./static/fontawesome.all.min.js"></script>
+  <script src="./static/bulma-carousel.min.js"></script>
+  <script src="./static/bulma-slider.min.js"></script>
+  <script src="./static/explorer-index.js"></script>
+  <script src="./static/question_card.js"></script>
+
+  <script src="./static/leaderboard_testmini.js"></script>  
+  <script src="./static/output_folders.js" defer=""></script>
+  <script src="./static/model_scores.js" defer=""></script>
+
+  <script src="./static/data_public.js" defer=""></script>
+
+  <style>
+      .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: -20px;
+        }
+    .node {
+      fill: #f8f1e4;
+      stroke: #000;
+      stroke-width: 1;
+      rx: 10;
+      ry: 10;
+    }
+    .node text {
+      font-size: 14px;
+      text-anchor: middle;
+    }
+    .link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 2;
+    }
+    .badge {
+      font-size: 12px;
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold" style="display: inline-block; margin-right: 0px;">
+            <span style="vertical-align: middle">Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning</span>
+            </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://codegoat24.github.io/"><b>Yibin Wang</b></a><sup>1,2,4*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Lnr1FQEAAAAJ&hl=zh-CN"><b>Zhimin Li</b></a><sup>4*</sup><sup></sup>,</span>
+            <span class="author-block">
+              <a href="https://yuhangzang.github.io/"><b>Yuhang Zang</b></a><sup>3*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=XLnXvPwAAAAJ&hl=zh-TW"><b>Yujie Zhou</b></a><sup>3,5</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=a8h9Di4AAAAJ&hl=zh-TW"><b>Jiazi Bu</b></a><sup>3,5</sup>,</span>
+              <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=VXQV5xwAAAAJ&hl=en"><b>Chunyu Wang</b></a><sup>4</sup>,</span>
+              <span class="author-block">
+              <a href="https://openreview.net/profile?id=%7EQinglin_Lu2"><b>Qinglin Lu</b></a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://cjinfdu.github.io/"><b>Cheng Jin</b></a><sup>1</sup><sup>†</sup>,</span>
+              <span class="author-block">
+                <a href="https://myownskyw7.github.io/"><b>Jiaqi Wang</b></a><sup>2,3</sup><sup>†</sup>,</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 15px;"><sup>1</sup>Fudan University,</span> 
+            <span class="author-block" style="margin-right: 15px;"><sup>2</sup>Shanghai Innovation Intuition,</span><br>
+            <span class="author-block" style="margin-right: 15px;"><sup>3</sup>Shanghai AI Lab,</span>
+            <span class="author-block" style="margin-right: 15px;"><sup>4</sup>Hunyuan, Tencent</span><br>
+            <span class="author-block" style="margin-right: 15px;"><sup>5</sup>Shanghai Jiaotong University</span>
+            <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
+          </div>
+          <!-- ArXiv Link. -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CodeGoat24/UnifiedReward" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              
+                            <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Models</span>
+                </a>
+              </span> 
+              <span class="link-block">
+                <a href="https://github.com/CodeGoat24/UniGenBench" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>UniGenBench</span>
+                  </a>
+              </span>
+              
+
+
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/CodeGoat24/UniGenBench_Leaderboard" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🏅</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>LeaderBoard</span>
+                </a>
+              </span> 
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Begin Teaser -->
+<div>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+
+      </div>
+    </div>
+      <div class="content has-text-centered">
+        <img src="static/images/prefgrpo/pref_grpo_pipeline.png" alt="data-overview" width="800" height="600">
+      </div>
+      
+      <div class="content has-text-centered">
+        <img src="static/images/prefgrpo/pref_grpo_reward_hacking.png" alt="data-overview" width="800" height="600">
+      </div>
+      
+      <div class="hero-body">
+        <h2 class="subtitle has-text-justified">
+          <p class="has-text-centered"><b>Method Overview.</b><br> (a) Existing pointwise reward functions assign minimal score differences between generated images, which result in advantage explosion and ultimately lead to reward hacking. (b) Pre-GRPO shifts the focus from reward score maximization to pairwise preference fitting, enabling stable optimization for T2I generation.</p>
+        </h2>
+      </div>
+    </div>
+  </section>
+  
+
+</div>
+
+
+
+
+
+<div>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="content has-text-centered">
+        <img src="static/images/prefgrpo/unigenbench_teaser.png" alt="data-overview" width="800" height="600">
+      </div>
+      <div class="hero-body">
+        <h2 class="subtitle has-text-justified">
+          <p class="has-text-centered"><b>Benchmark Overview.</b><br>This figure presents (a) prompt themes, (b) subject distribution, and evaluation dimensions (testpoints) of our UniGenBench, along with benchmarking results for both open-source and closed-source T2I models.</p>
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+</div>
+<!-- End Teaser -->
+<div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 50%;">
+        <img src="./static/images/prefgrpo/unigenbench_pipeline.png" alt="pipeline" >
+      </div>
+    </div>
+
+<div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 80%;">
+        <img src="./static/images/prefgrpo/unigenbench_leadboard.png" alt="pipeline" >
+      </div>
+    </div>
+    
+
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+            <p>
+              Recent advancements underscore the significant role of GRPO-based reinforcement learning methods and comprehensive benchmarking in enhancing and evaluating text-to-image (T2I) generation. However, <b>(1)</b> current methods employ pointwise reward models (RM) to score a group of generated images and compute their advantages through score normalization for policy optimization. Although effective, this reward score-maximization paradigm is susceptible to <b>reward hacking</b>, where scores increase but image quality deteriorates. This work reveals that the underlying cause is advantage explosion, induced by minimal reward score differences between generated images. After group normalization, these small differences are disproportionately amplified, driving the model to over-optimize for trivial gains and ultimately destabilizing the generation process. 
+To this end, this paper proposes <b>Pref-GRPO</b>, the first pairwise preference reward-based GRPO method, which shifts the optimization objective from traditional reward score maximization to pairwise preference fitting, establishing a more stable training paradigm for T2I generation.
+Specifically, in each step, the images within a generated group are pairwise compared using preference RM, and their win rate is calculated as the reward signal for policy optimization. Extensive experiments show that Pref-GRPO effectively differentiates subtle image quality differences, offering more stable advantages than pointwise scoring, thus mitigating the reward hacking problem.
+<b>(2)</b> Additionally, existing T2I benchmarks are <b>limited to coarse evaluation criteria</b>, covering only a narrow range of sub-dimensions and lacking fine-grained evaluation at the individual sub-dimension level, thereby hindering comprehensive assessment of T2I models.
+Therefore, this paper proposes <b>UniGenBench</b>, a unified T2I generation benchmark. Specifically, our benchmark comprises 600 prompts spanning 5 main prompt themes and 20 subthemes, designed to evaluate T2I models’ semantic consistency across 10 primary and 27 sub evaluation criteria, with each prompt assessing multiple testpoints.
+Leveraging the general world knowledge and fine-grained image understanding capabilities of MLLM, we propose an effective pipeline for benchmark construction and evaluation. Through meticulous benchmarking of both open and closed-source T2I models, we uncover their strengths and weaknesses across various fine-grained aspects.</p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <!--/ Abstract. -->
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">UniGenBench: Unified T2I Generation Benchmark</h2>
+
+
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+    
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/prefgrpo/unigenbench_prompt_theme.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="has-text-justified" style="margin-top: -1cm;">
+        
+      </h2>
+    </div>
+    
+  </div>
+ 
+  <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/prefgrpo/unigenbench_evaluation_dimension.png" alt="pipeline" width="1400" height="1200">
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="has-text-justified" style="margin-top: -1cm;">
+        
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+  
+  <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/prefgrpo/unigenbench_testpoint_counts.png" alt="pipeline" width="700" height="700">
+      </div>
+    </div>
+
+    
+  </div>
+  </div>
+
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Results</h2>
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/prefgrpo/unigenbench_performance.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="margin-top: -1cm;">
+        <p class="has-text-centered"></p>
+      </h2>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+
+  
+    
+  </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/prefgrpo/pref_grpo_qualitative_1.png" alt="pipeline" >
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/prefgrpo/pref_grpo_qualitative_2.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    
+
+  </div>
+  </div>
+
+      
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+
+    </code></pre>
+  </div>
+</section>
+
+</body></html>
