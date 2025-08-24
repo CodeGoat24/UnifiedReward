@@ -7,13 +7,13 @@
     </h2>
 </div>
 
-> (Coming soon!!)[**Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning**](): We propose **Pref-GRPO** and **UniGenbench**, the first **preference reward-based GRPO method** for stable T2I reinforcement learning, and a **unified T2I generation benchmark** for fine-grained semantic consistency evaluation.
+> (Coming soon!!)[**Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning**](https://codegoat24.github.io/UnifiedReward/Pref-GRPO): We propose **Pref-GRPO** and **UniGenbench**, the first **preference reward-based GRPO method** for stable T2I reinforcement learning, and a **unified T2I generation benchmark** for fine-grained semantic consistency evaluation.
 
-> [**Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning**](https://arxiv.org/pdf/2505.03318): We propose **UnifiedReward-Think**, the first unified multimodal CoT reward model.
+> [**Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning**](https://codegoat24.github.io/UnifiedReward/think): We propose **UnifiedReward-Think**, the first unified multimodal CoT reward model.
 
 
 
-> [**Unified Reward Model for Multimodal Understanding and Generation**](https://arxiv.org/pdf/2503.05236): We propose **UnifiedReward**, the first unified reward model for multimodal understanding and generation.
+> [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We propose **UnifiedReward**, the first unified reward model for multimodal understanding and generation.
 
 
 
