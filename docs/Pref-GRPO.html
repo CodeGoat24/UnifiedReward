@@ -3,9 +3,9 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style>
   
   <meta name="description" content="Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning">
-  <meta name="keywords" content="Reinforcement Learning, GRPO, Text-to-Image Generation, Preference Alignment">
+  <meta name="keywords" content="Pref-GRPO, UniGenBench, GRPO, Text-to-Image Benchmark">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pref-GRPO</title>
+  <title>Pref-GRPO&UniGenBench</title>
 
 
   <link rel="shortcut icon" href="https://picx.zhimg.com/v2-cb40b1f8c3125f3cfb9a4538e1c0f2b7_l.jpg?source=32738c0c" type="image/x-icon">
@@ -127,7 +127,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/CodeGoat24/UnifiedReward" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/CodeGoat24/Pref-GRPO" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -143,7 +143,7 @@
                       <p style="font-size:18px">🤗</p>
                       <!-- 🔗 -->
                   </span>
-                  <span>Models</span>
+                  <span>Model</span>
                 </a>
               </span> 
               <span class="link-block">
@@ -253,12 +253,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
             <p>
-              Recent advancements underscore the significant role of GRPO-based reinforcement learning methods and comprehensive benchmarking in enhancing and evaluating text-to-image (T2I) generation. However, <b>(1)</b> current methods employ pointwise reward models (RM) to score a group of generated images and compute their advantages through score normalization for policy optimization. Although effective, this reward score-maximization paradigm is susceptible to <b>reward hacking</b>, where scores increase but image quality deteriorates. This work reveals that the underlying cause is advantage explosion, induced by minimal reward score differences between generated images. After group normalization, these small differences are disproportionately amplified, driving the model to over-optimize for trivial gains and ultimately destabilizing the generation process. 
-To this end, this paper proposes <b>Pref-GRPO</b>, the first pairwise preference reward-based GRPO method, which shifts the optimization objective from traditional reward score maximization to pairwise preference fitting, establishing a more stable training paradigm for T2I generation.
+              Recent advancements underscore the significant role of GRPO-based reinforcement learning methods and comprehensive benchmarking in enhancing and evaluating text-to-image (T2I) generation. However, <b>(1)</b> current methods employ pointwise reward models (RM) to score a group of generated images and compute their advantages through score normalization for policy optimization. Although effective, this reward score-maximization paradigm is susceptible to <b>reward hacking</b>, where scores increase but image quality deteriorates. This work reveals that the underlying cause is illusory advantage, induced by minimal reward score differences between generated images. After group normalization, these small differences are disproportionately amplified, driving the model to over-optimize for trivial gains and ultimately destabilizing the generation process. 
+To this end, this paper proposes <b>Pref-GRPO</b>, the first pairwise preference reward-based GRPO method for T2I generation, which shifts the optimization objective from traditional reward score maximization to pairwise preference fitting, establishing a more stable training paradigm.
 Specifically, in each step, the images within a generated group are pairwise compared using preference RM, and their win rate is calculated as the reward signal for policy optimization. Extensive experiments show that Pref-GRPO effectively differentiates subtle image quality differences, offering more stable advantages than pointwise scoring, thus mitigating the reward hacking problem.
 <b>(2)</b> Additionally, existing T2I benchmarks are <b>limited to coarse evaluation criteria</b>, covering only a narrow range of sub-dimensions and lacking fine-grained evaluation at the individual sub-dimension level, thereby hindering comprehensive assessment of T2I models.
 Therefore, this paper proposes <b>UniGenBench</b>, a unified T2I generation benchmark. Specifically, our benchmark comprises 600 prompts spanning 5 main prompt themes and 20 subthemes, designed to evaluate T2I models’ semantic consistency across 10 primary and 27 sub evaluation criteria, with each prompt assessing multiple testpoints.
-Leveraging the general world knowledge and fine-grained image understanding capabilities of MLLM, we propose an effective pipeline for benchmark construction and evaluation. Through meticulous benchmarking of both open and closed-source T2I models, we uncover their strengths and weaknesses across various fine-grained aspects.</p>
+Using the general world knowledge and fine-grained image understanding capabilities of Multi-modal Large Language Model (MLLM), we propose an effective pipeline for benchmark construction and evaluation. Through meticulous benchmarking of both open and closed-source T2I models, we uncover their strengths and weaknesses across various fine-grained aspects, and also demonstrate the effectiveness of our proposed Pref-GRPO.</p>
 
         </div>
 
