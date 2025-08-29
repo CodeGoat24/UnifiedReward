@@ -7,7 +7,7 @@
     </h2>
 </div>
 
-> (Coming soon!!)[**Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning**](https://codegoat24.github.io/UnifiedReward/Pref-GRPO): We propose **Pref-GRPO** and **UniGenbench**, the first **preference reward-based GRPO method** for stable T2I reinforcement learning, and a **unified T2I generation benchmark** for fine-grained semantic consistency evaluation.
+> [**Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning**](https://codegoat24.github.io/UnifiedReward/Pref-GRPO): We propose **Pref-GRPO** and **UniGenbench**, the first **preference reward-based GRPO method** for stable T2I reinforcement learning, and a **unified T2I generation benchmark** for fine-grained semantic consistency evaluation.
 <a href="https://codegoat24.github.io/UnifiedReward/Pref-GRPO">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 <a href="https://github.com/CodeGoat24/Pref-GRPO">
