@@ -490,16 +490,16 @@ Thanks to all the contributors!
 
 ## ⭐ Citation
 ```bibtex
-@article{UnifiedReward-Think,
-  title={Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning.},
-  author={Wang, Yibin and Li, Zhimin and Zang, Yuhang and Wang, Chunyu and Lu, Qinglin, and Jin, Cheng and Wang, Jiaqi},
+@article{unifiedreward-think,
+  title={Unified multimodal chain-of-thought reward model through reinforcement fine-tuning},
+  author={Wang, Yibin and Li, Zhimin and Zang, Yuhang and Wang, Chunyu and Lu, Qinglin and Jin, Cheng and Wang, Jiaqi},
   journal={arXiv preprint arXiv:2505.03318},
   year={2025}
 }
 ```
 ```bibtex
-@article{UnifiedReward,
-  title={Unified Reward Model for Multimodal Understanding and Generation.},
+@article{unifiedreward,
+  title={Unified reward model for multimodal understanding and generation},
   author={Wang, Yibin and Zang, Yuhang and Li, Hao and Jin, Cheng and Wang, Jiaqi},
   journal={arXiv preprint arXiv:2503.05236},
   year={2025}
