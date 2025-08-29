@@ -202,6 +202,13 @@ If you have any comments or questions, please open a new issue or feel free to c
   journal={arXiv preprint arXiv:2505.03318},
   year={2025}
 }
+
+@article{unifiedreward,
+  title={Unified reward model for multimodal understanding and generation},
+  author={Wang, Yibin and Zang, Yuhang and Li, Hao and Jin, Cheng and Wang, Jiaqi},
+  journal={arXiv preprint arXiv:2503.05236},
+  year={2025}
+}
 ```
 
 ## 🖼️ More Qualitative Cases
