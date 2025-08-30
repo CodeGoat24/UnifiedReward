@@ -8,27 +8,25 @@
 </div>
 
 > [**Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning**](https://codegoat24.github.io/UnifiedReward/Pref-GRPO): We propose **Pref-GRPO** and **UniGenbench**, the first **preference reward-based GRPO method** for stable T2I reinforcement learning, and a **unified T2I generation benchmark** for fine-grained semantic consistency evaluation.
-<a href="https://codegoat24.github.io/UnifiedReward/Pref-GRPO">
-<img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
-<a href="https://github.com/CodeGoat24/Pref-GRPO">
-<img src='https://img.shields.io/badge/Github-Pref GRPO-blue' alt='Project Page'></a>
-<a href="https://github.com/CodeGoat24/UniGenBench">
-<img src='https://img.shields.io/badge/Benchmark-UniGenBench-green' alt='Project Page'></a>
-
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Leaderboard-yellow)](https://huggingface.co/spaces/CodeGoat24/UniGenBench_Leaderboard)
+> <a href="https://codegoat24.github.io/UnifiedReward/Pref-GRPO">
+> <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
+> <a href="https://github.com/CodeGoat24/Pref-GRPO">
+> <img src='https://img.shields.io/badge/Github-Pref GRPO-blue' alt='Project Page'></a>
+> <a href="https://github.com/CodeGoat24/UniGenBench">
+> <img src='https://img.shields.io/badge/Benchmark-UniGenBench-green' alt='Project Page'></a>
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Leaderboard-yellow)](https://huggingface.co/spaces/CodeGoat24/UniGenBench_Leaderboard)
 
 
 
 > [**Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning**](https://codegoat24.github.io/UnifiedReward/think): We propose **UnifiedReward-Think**, the first unified multimodal CoT reward model.
-
-<a href="https://codegoat24.github.io/UnifiedReward/think">
-<img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
-</a>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
-</a>
+><a href="https://codegoat24.github.io/UnifiedReward/think">
+><img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
+><a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
+><img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
+></a>
+><a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
+><img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
+></a>
 
 
 > [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We propose **UnifiedReward**, the first unified reward model for multimodal understanding and generation.
