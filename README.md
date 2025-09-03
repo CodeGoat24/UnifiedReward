@@ -29,7 +29,7 @@
 ></a>
 
 
-> [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We propose **UnifiedReward**, the first unified reward model for multimodal understanding and generation.
+> [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We release the **UnifiedReward**, **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring.
 
 
 
@@ -47,45 +47,40 @@
 
 
 
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-0.5b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 0.5b -yellow">
+
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 2.0 qwen 3b-yellow">
 </a>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 7b-yellow">
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 2.0 qwen 7b-yellow">
 </a>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 7b v1.5-yellow">
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 2.0 qwen 32b-yellow">
 </a>
-<br>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward qwen 3b-yellow">
-</a>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward qwen 7b-yellow">
-</a>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-qwen-32b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward qwen 32b-yellow">
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward 2.0 qwen 72b-yellow">
 </a>
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-GGUF_Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%202.0%20Qwen-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-models-68b7c99ab70ff81184c70270)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20Qwen-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-models-67c3008148c3a380d15ac63a)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20Qwen-GGUF_Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca)
+<br>
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20LLaVA-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-models-67c3008148c3a380d15ac63a)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
 
-We release the **UnifiedReward** -- **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring, which can be employed for vision model preference alignment. 
+😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
-🔥🔥 We release UnifiedReward-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-32b)], the more powerful unified reward models built upon [Qwen2.5-VL-Instruct](https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5)!!
+🔥🔥🔥 We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)]. 
+>This version introduces several new capabilities:
+>
+>1. **Pairwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence_**, **_Style_** dimensions.
+>
+>2. **Pointwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence/Physics_**, **_Style_** dimensions. 
+>
+>Welcome to try the latest version, and the inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory.
 
-🔥 We release **SGLang** and **vLLM** inference code for our model in `sglang_llava` and `vllm_qwen` directories!
+🔥 We release **SGLang** and **vLLM** inference code in `sglang_llava` and `vllm_qwen` directories!
 
-😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models, and the [Tencent Hunyuan](https://hunyuan.tencent.com/) team for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
-| Model                | Alignment | Coherence | Style |
-|---------------------|------------------|-----------------------|------------------|
-| Flux-pro-ultra      | 3.6453           | 3.8193                | _3.4971_         |
-| Imagen-4.0          | 3.6792         | 3.8049                | 3.4756           |
-| Recraft-v3          | 3.6611           | 3.8409              | **3.5158**       |
-| OpenAI-GPT-image-1  | _3.6890_     | **3.8448**            | 3.4960           |
-| Imagen-3.0          | 3.6733           | 3.8027                | 3.4674           |
-| Seedream-3.0        | **3.6927**       | _3.8218_          | 3.4887           |
 
 ### ✨ **Awesome Works using UnifiedReward**
 
@@ -103,7 +98,19 @@ We release the **UnifiedReward** -- **the first unified reward model for multimo
 | Janus-Pro + GRPO       | 79.2      | 79.3      | **81.0**      |
 | Janus-Pro + Best-of-4  | 82.1      | 82.4      | **84.5**      |
 
+😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models, and the [Tencent Hunyuan](https://hunyuan.tencent.com/) team for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
 
+<details>
+<summary>click for evaluation results on several T2I models</summary>
+| Model                | Alignment | Coherence | Style |
+|---------------------|------------------|-----------------------|------------------|
+| Flux-pro-ultra      | 3.6453           | 3.8193                | _3.4971_         |
+| Imagen-4.0          | 3.6792         | 3.8049                | 3.4756           |
+| Recraft-v3          | 3.6611           | 3.8409              | **3.5158**       |
+| OpenAI-GPT-image-1  | _3.6890_     | **3.8448**            | 3.4960           |
+| Imagen-3.0          | 3.6733           | 3.8027                | 3.4674           |
+| Seedream-3.0        | **3.6927**       | _3.8218_          | 3.4887           |
+</details>
 
 ## 🔥🔥🔥 **UnifiedReward-Think**
 
@@ -136,19 +143,6 @@ Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/t
 <p align="left" width="100%">
 <img src="./docs/static/images/think/gradio_case.png"  width="80%">
 </p>
-
-## 🔥 News
-😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
-
-Please leave us a star ⭐ if you find our work helpful.
-- [2025/5] 🔥🔥 We released [UnifiedReward-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-32b)], the more powerful unified reward models built upon [Qwen2.5-VL-Instruct](https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5)!!(https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)! All its inference and evaluation codes are provided in `./inference_qwen` and `./benchmark_evaluation` directory, respectively.
-- [2025/5] 🔥🔥 We released [UnifiedReward-Think-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b), the first unified multimodal CoT reward model. See [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
-- [2025/4] 🔥🔥 We updated [UnifiedReward-7B](https://huggingface.co/CodeGoat24/UnifiedReward-7b), incorporating valuable feedback from the community, and released [UnifiedReward-7B-v1.5](https://huggingface.co/CodeGoat24/UnifiedReward-7b-v1.5) by introducing pointwise scoring for generated images across three dimensions: alignment, coherence, and style, each rated on a continuous scale from 1 to 5.
-  1. **Alignment** quantifies how well an image matches its prompt.
-  2. **Coherence** assesses the logical consistency of the image and the absence of artifacts or visual glitches.
-  3. **Style** reflects the visual appeal of the image, independent of the prompt.
-
-  Welcome to try the latest version, and the inference code is in `inference_qwen/image_generation/qwen_point_score_ACS_image_generation.py` and `./inference/point_score_ACS_image_generation.py`.
 
 <img src=./docs/static/images/pipeline.png width="100%"/>
 
