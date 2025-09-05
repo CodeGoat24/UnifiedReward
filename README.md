@@ -102,6 +102,7 @@
 
 <details>
 <summary>click for evaluation results on several T2I models</summary>
+    
 | Model                | Alignment | Coherence | Style |
 |---------------------|------------------|-----------------------|------------------|
 | Flux-pro-ultra      | 3.6453           | 3.8193                | _3.4971_         |
