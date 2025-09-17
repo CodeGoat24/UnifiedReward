@@ -70,7 +70,7 @@
 
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
-🔥🔥🔥 ~~We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)].~~ 
+🔥🔥🔥 We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/~~[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)].~~ 
 We found minor noise in the training data of UnifiedReward-2.0. The data is being cleaned and the model retrained, **with an updated release expected within a week**. Thanks for your continuous support!
 >This version introduces several new capabilities:
 >
