@@ -33,7 +33,6 @@ def read_video_frames(video_path, num_frames=8, save_dir="./frames", prefix="vid
             break
 
         if current_frame in selected_frames:
-            # 保存帧为 jpg
             frame_name = f"{prefix}_frame_{frame_idx:03d}.jpg"
             frame_path = os.path.join(save_dir, frame_name)
             cv2.imwrite(frame_path, frame)
