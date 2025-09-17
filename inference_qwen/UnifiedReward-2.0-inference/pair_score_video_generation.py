@@ -11,7 +11,8 @@ from vllm_request import evaluate_batch
 
 import cv2
 
-def read_video_frames(video_path, num_frames=8):
+def read_video_frames(video_path, num_frames=8, save_dir="./frames", prefix="video"):
+    os.makedirs(save_dir, exist_ok=True)
 
     cap = cv2.VideoCapture(video_path)
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
@@ -22,7 +23,7 @@ def read_video_frames(video_path, num_frames=8):
 
     selected_frames = [int(i * total_frames / num_frames) for i in range(num_frames)]
 
-    frames = []
+    frame_paths = []
     current_frame = 0
     frame_idx = 0
 
@@ -32,7 +33,11 @@ def read_video_frames(video_path, num_frames=8):
             break
 
         if current_frame in selected_frames:
-            frames.append(frame)
+            # 保存帧为 jpg
+            frame_name = f"{prefix}_frame_{frame_idx:03d}.jpg"
+            frame_path = os.path.join(save_dir, frame_name)
+            cv2.imwrite(frame_path, frame)
+            frame_paths.append(frame_path)
             frame_idx += 1
 
         current_frame += 1
@@ -40,7 +45,7 @@ def read_video_frames(video_path, num_frames=8):
             break
 
     cap.release()
-    return frames
+    return frame_paths
 
 
 
@@ -52,9 +57,8 @@ prompt = ""
 video_path_1 = ''
 video_path_2 = ''
 
-images.extend(read_video_frames(video_path_1, num_frames=8))
-
-images.extend(read_video_frames(video_path_2, num_frames=8))
+images.extend(read_video_frames(video_path_1, num_frames=8, save_dir="./frames", prefix="video1"))
+images.extend(read_video_frames(video_path_2, num_frames=8, save_dir="./frames", prefix="video2"))
 
 problem = (
     "You are presented with two generated videos (Video 1 and Video 2) along with a shared text caption. "
