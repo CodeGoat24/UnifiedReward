@@ -151,22 +151,22 @@ def evaluate_batch(batch_data, api_url, image_root=None):
 
     return total_result
 
-def main():
-    # 参数解析
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--api_url", default="http://localhost:8080")
-    parser.add_argument("--image_root", default=None)
-    parser.add_argument("--output_path", default="./results.json")
-    args = parser.parse_args()
+# def main():
+#     # 参数解析
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument("--api_url", default="http://localhost:8080")
+#     parser.add_argument("--image_root", default=None)
+#     parser.add_argument("--output_path", default="./results.json")
+#     args = parser.parse_args()
 
-    batch_data = [{
-                "images": [
-                    # image path_1,
-                    # image path_2,
-                ],
-                "problem": ,
-            }]
+#     batch_data = [{
+#                 "images": [
+#                     # image path_1,
+#                     # image path_2,
+#                 ],
+#                 "problem": ,
+#             }]
 
-    evaluate_batch(batch_data, args.api_url, image_root=args.image_root)
-if __name__ == "__main__":
-    main()
+#     evaluate_batch(batch_data, args.api_url, image_root=args.image_root)
+# if __name__ == "__main__":
+#     main()
