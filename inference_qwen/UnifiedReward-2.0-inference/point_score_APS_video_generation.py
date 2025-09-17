@@ -47,12 +47,13 @@ def read_video_frames(video_path, num_frames=8, save_dir="./frames", prefix="vid
     return frame_paths
 
 input_data = []
+images = []
 
 prompt = ""
 
 video_path = ''
 
-images.extend(read_video_frames(video_path, num_frames=16, save_dir="./frames", prefix="video"))
+images = read_video_frames(video_path, num_frames=8, save_dir="./frames", prefix="video")
 
 problem = (
     "You are presented with a generated video and its associated text caption. "
