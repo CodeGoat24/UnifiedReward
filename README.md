@@ -18,7 +18,7 @@
 
 
 
-> [**Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning**](https://codegoat24.github.io/UnifiedReward/think): We propose **UnifiedReward-Think**, the first unified multimodal CoT reward model.
+> [**NeurIPS 2025**] [**Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning**](https://codegoat24.github.io/UnifiedReward/think): We propose **UnifiedReward-Think**, the first unified multimodal CoT reward model.
 ><a href="https://codegoat24.github.io/UnifiedReward/think">
 ><img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 ><a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
