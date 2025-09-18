@@ -139,6 +139,10 @@ We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward 
 
 Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
 
+**UnifiedReward-Think-qwen-2.0 [3b/7b/32b/72b] are coming soon!!**
+
+🔥🔥 UnifiedReward-Think is accepted by **NeurIPS 2025**！
+
 🔥🔥 We release [UnifiedReward-Think-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b), a more powerful unified multimodal CoT reward model built upon [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!!!!
 
 🔥🔥 We released Gradio for UnifiedReward-Think!
