@@ -114,7 +114,7 @@ We found minor noise in the training data of UnifiedReward-2.0. The data is bein
 | Seedream-3.0        | **3.6927**       | _3.8218_          | 3.4887           |
 </details>
 
-## 🔥🔥🔥 **UnifiedReward-Think**
+## 🔥🔥🔥 [NeurIPS 2025] **UnifiedReward-Think**
 
 <div align="left">
     <h3 align="left"> 
@@ -140,8 +140,6 @@ We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward 
 Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
 
 **UnifiedReward-Think-qwen-2.0 [3b/7b/32b/72b] are coming soon!!**
-
-🔥🔥 UnifiedReward-Think is accepted by **NeurIPS 2025**！
 
 🔥🔥 We release [UnifiedReward-Think-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b), a more powerful unified multimodal CoT reward model built upon [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!!!!
 
