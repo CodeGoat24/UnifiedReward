@@ -87,7 +87,7 @@ We found minor noise in the training data of UnifiedReward-2.0. The data is bein
 
 😊 Meta, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589).
 
-😊 NVIDIA, Stanford, Tsinghua, [DiffusionNFT: Online Diffusion Reinforcement with Forward Process](https://arxiv.org/pdf/2509.16117).
+😊 NVIDIA, Stanford, Tsinghua, [DiffusionNFT: Online Diffusion Reinforcement with Forward Process](https://arxiv.org/pdf/2509.16117). [![[code]](https://img.shields.io/github/stars/NVlabs/DiffusionNFT)](https://github.com/NVlabs/DiffusionNFT)
 
 😊 Kuaishou, Tsinghua, CUHK, [Flow-GRPO: Training Flow Matching Models via Online RL](https://github.com/yifan123/flow_grpo). [![[code]](https://img.shields.io/github/stars/yifan123/flow_grpo)](https://github.com/yifan123/flow_grpo)
 
