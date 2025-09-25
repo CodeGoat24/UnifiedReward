@@ -421,7 +421,7 @@ mkdir -p checkpoints/vc2
 wget -P checkpoints/vc2 https://huggingface.co/VideoCrafter/VideoCrafter2/resolve/main/model.ckpt
 ```
 
-Please download our constructed T2V-Turbo model and its reference model from [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a) and put it in `./checkpoints/t2v-turbo`.
+Please download our constructed T2V-Turbo model and its reference model from [Huggingface](https://huggingface.co/CodeGoat24/T2V-Turbo) and put it in `./checkpoints/t2v-turbo`.
 
 #### 1. Construct Preference data
 Video Generation
