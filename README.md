@@ -62,11 +62,11 @@
 </a>
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%202.0%20Qwen-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-models-68b7c99ab70ff81184c70270)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%202.0-Datasets-yellow)](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-T2X-score-data)<br>
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20Qwen-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-models-67c3008148c3a380d15ac63a)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20Qwen-GGUF_Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca)
-<br>
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20LLaVA-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-models-67c3008148c3a380d15ac63a)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
 
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
@@ -77,7 +77,7 @@ This version introduces several new capabilities:
 >
 >2. **Pointwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence/Physics_**, **_Style_** dimensions. 
 >
-Welcome to try the latest version, and the inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory. The newly added training data has been released [here](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-Added-Training-data) 😊.
+Welcome to try the latest version, and the inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory. The newly added training data has been released [here](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-T2X-score-data) 😊.
 
 🔥 We release **SGLang** and **vLLM** inference code in `sglang_llava` and `vllm_qwen` directories!
 
@@ -108,12 +108,12 @@ Welcome to try the latest version, and the inference code is available at [`infe
     
 | Model                | Alignment | Coherence | Style |
 |---------------------|------------------|-----------------------|------------------|
-| Flux-pro-ultra      | 3.6453           | 3.8193                | _3.4971_         |
+| Flux-pro-ultra      | 3.6453           | 3.8193                | 3.4971         |
 | Imagen-4.0          | 3.6792         | 3.8049                | 3.4756           |
 | Recraft-v3          | 3.6611           | 3.8409              | **3.5158**       |
-| OpenAI-GPT-image-1  | _3.6890_     | **3.8448**            | 3.4960           |
+| OpenAI-GPT-image-1  | 3.6890     | **3.8448**            | 3.4960           |
 | Imagen-3.0          | 3.6733           | 3.8027                | 3.4674           |
-| Seedream-3.0        | **3.6927**       | _3.8218_          | 3.4887           |
+| Seedream-3.0        | **3.6927**       | 3.8218          | 3.4887           |
 </details>
 
 ## 🔥🔥🔥 [NeurIPS 2025] **UnifiedReward-Think**
@@ -139,7 +139,7 @@ Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuni
 
 We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward model**, capable of multi-dimensional, step-by-step long-chain reasoning for both visual understanding and generation reward tasks.
 
-Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for details.
+Please refer to the [README.md](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for training and inference details.
 
 **UnifiedReward-Think-qwen-2.0 [3b/7b/32b/72b] are coming soon!!**
 
@@ -150,24 +150,24 @@ Please refer to the [project page](https://github.com/CodeGoat24/UnifiedReward/t
 <img src="./docs/static/images/think/gradio_case.png"  width="80%">
 </p>
 
-<img src=./docs/static/images/pipeline.png width="100%"/>
+<!-- <img src=./docs/static/images/pipeline.png width="100%"/> -->
 
 
 ## 🏁 Compared with Current Reward Models
 
-|  Reward Model | Method| Image Generation | Image Understanding | Video Generation | Video Understanding
-| :-----: | :-----: |:-----: |:-----: | :-----: | :-----: |
-|  [PickScore](https://github.com/yuvalkirstain/PickScore) |Point | √ |  | ||
-|  [HPS](https://github.com/tgxs002/HPSv2) | Point | √ |  |||
-|  [ImageReward](https://github.com/THUDM/ImageReward) |  Point| √|  |||
-|  [LLaVA-Critic](https://huggingface.co/lmms-lab/llava-critic-7b) | Pair/Point | | √  |||
-|  [IXC-2.5-Reward](https://github.com/InternLM/InternLM-XComposer) | Pair/Point | | √  ||√|
-|  [VideoScore](https://github.com/TIGER-AI-Lab/VideoScore) | Point |  |  |√ ||
-|  [LiFT](https://github.com/CodeGoat24/LiFT) | Point |  |  |√| |
-|  [VisionReward](https://github.com/THUDM/VisionReward) | Point |√  | |√||
-|  [VideoReward](https://github.com/KwaiVGI/VideoAlign) | Point |  |  |√ ||
-|  UnifiedReward (Ours) | Pair/Point | √ | √ |√|√|
-
+|  Reward Model | Method| Image Generation | Image Understanding | Video Generation | Video Understanding | CoT Reasoning
+| :-----: | :-----: |:-----: |:-----: | :-----: | :-----: | :-----: |
+|  [PickScore](https://github.com/yuvalkirstain/PickScore) |Point | √ |  | || |
+|  [HPS](https://github.com/tgxs002/HPSv2) | Point | √ |  ||| |
+|  [ImageReward](https://github.com/THUDM/ImageReward) |  Point| √|  ||| |
+|  [LLaVA-Critic](https://huggingface.co/lmms-lab/llava-critic-7b) | Pair/Point | | √  ||| |
+|  [IXC-2.5-Reward](https://github.com/InternLM/InternLM-XComposer) | Pair/Point | | √  ||√| |
+|  [VideoScore](https://github.com/TIGER-AI-Lab/VideoScore) | Point |  |  |√ || |
+|  [LiFT](https://github.com/CodeGoat24/LiFT) | Point |  |  |√| | |
+|  [VisionReward](https://github.com/THUDM/VisionReward) | Point |√  | |√|| |
+|  [VideoReward](https://github.com/KwaiVGI/VideoAlign) | Point |  |  |√ || |
+|  **UnifiedReward** (Ours) | Pair/Point | √ | √ |√|√| |
+|  **UnifiedReward-Think** (Ours) | Pair/Point | √ | √ |√|√|√|
 
 
 ##  🔧 Environment Set Up
