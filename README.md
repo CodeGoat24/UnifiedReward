@@ -77,7 +77,7 @@ This version introduces several new capabilities:
 >
 >2. **Pointwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence/Physics_**, **_Style_** dimensions. 
 >
-Welcome to try the latest version, and the inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory.
+Welcome to try the latest version, and the inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory. The newly added training data has been released [here](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-Added-Training-data) 😊.
 
 🔥 We release **SGLang** and **vLLM** inference code in `sglang_llava` and `vllm_qwen` directories!
 
