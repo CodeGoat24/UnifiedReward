@@ -88,6 +88,8 @@ Welcome to try the latest version, and the inference code is available at [`infe
 
 😊 NVIDIA, Stanford, Tsinghua, [DiffusionNFT: Online Diffusion Reinforcement with Forward Process](https://arxiv.org/pdf/2509.16117). [![[code]](https://img.shields.io/github/stars/NVlabs/DiffusionNFT)](https://github.com/NVlabs/DiffusionNFT)
 
+😊 University of California, USTC, PKU, BIGAI, [MILR: Improving Multimodal Image Generation via Test-time Latent Reasoning](https://arxiv.org/pdf/2509.22761).
+
 😊 Kuaishou, Tsinghua, CUHK, [Flow-GRPO: Training Flow Matching Models via Online RL](https://github.com/yifan123/flow_grpo). [![[code]](https://img.shields.io/github/stars/yifan123/flow_grpo)](https://github.com/yifan123/flow_grpo)
 
 😊 Tencent Hunyuan, [MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE](https://arxiv.org/pdf/2507.21802). [![[code]](https://img.shields.io/github/stars/Tencent-Hunyuan/MixGRPO)](https://github.com/Tencent-Hunyuan/MixGRPO)
