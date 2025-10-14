@@ -32,7 +32,28 @@
 > [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We release the **UnifiedReward**, **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring.
 
 
+### ✨ **Awesome Works using UnifiedReward**
 
+😊 Meta, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589).
+
+😊 NVIDIA, Stanford, Tsinghua, [DiffusionNFT: Online Diffusion Reinforcement with Forward Process](https://arxiv.org/pdf/2509.16117). [![[code]](https://img.shields.io/github/stars/NVlabs/DiffusionNFT)](https://github.com/NVlabs/DiffusionNFT)
+
+😊 University of California, USTC, PKU, BIGAI, [MILR: Improving Multimodal Image Generation via Test-time Latent Reasoning](https://arxiv.org/pdf/2509.22761).
+
+😊 Kuaishou, Tsinghua, CUHK, [Flow-GRPO: Training Flow Matching Models via Online RL](https://github.com/yifan123/flow_grpo). [![[code]](https://img.shields.io/github/stars/yifan123/flow_grpo)](https://github.com/yifan123/flow_grpo)
+
+😊 Tencent Hunyuan, [MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE](https://arxiv.org/pdf/2507.21802). [![[code]](https://img.shields.io/github/stars/Tencent-Hunyuan/MixGRPO)](https://github.com/Tencent-Hunyuan/MixGRPO)
+
+😊 Kling Team, CUHK MMLab, NJU, [VR-Thinker: Boosting Video Reward Models through Thinking-with-Image Reasoning](https://arxiv.org/pdf/2510.10518). [![[code]](https://img.shields.io/github/stars/qunzhongwang/vr-thinker)](https://github.com/qunzhongwang/vr-thinker)
+
+😊 CUHK MMLab, [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017). [![[code]](https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT)](https://github.com/ZiyuGuo99/Image-Generation-CoT)
+| Method     | HPS | ImageReward | UnifiedReward |
+|------------|-----------|-----------|-----------|
+|  Janus-Pro + DPO        | 77.3      | 77.7      | **80.0**      |
+| Janus-Pro + GRPO       | 79.2      | 79.3      | **81.0**      |
+| Janus-Pro + Best-of-4  | 82.1      | 82.4      | **84.5**      |
+
+😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 <div align="center">
     <h1 align="center"> Unified Reward Model for Multimodal Understanding and Generation
@@ -80,30 +101,6 @@ This version introduces several new capabilities:
 Welcome to try the latest version, and the inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory. The newly added training data has been released [here](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-T2X-score-data) 😊.
 
 🔥 We release **SGLang** and **vLLM** inference code in `sglang_llava` and `vllm_qwen` directories!
-
-
-### ✨ **Awesome Works using UnifiedReward**
-
-😊 Meta, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589).
-
-😊 NVIDIA, Stanford, Tsinghua, [DiffusionNFT: Online Diffusion Reinforcement with Forward Process](https://arxiv.org/pdf/2509.16117). [![[code]](https://img.shields.io/github/stars/NVlabs/DiffusionNFT)](https://github.com/NVlabs/DiffusionNFT)
-
-😊 University of California, USTC, PKU, BIGAI, [MILR: Improving Multimodal Image Generation via Test-time Latent Reasoning](https://arxiv.org/pdf/2509.22761).
-
-😊 Kuaishou, Tsinghua, CUHK, [Flow-GRPO: Training Flow Matching Models via Online RL](https://github.com/yifan123/flow_grpo). [![[code]](https://img.shields.io/github/stars/yifan123/flow_grpo)](https://github.com/yifan123/flow_grpo)
-
-😊 Tencent Hunyuan, [MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE](https://arxiv.org/pdf/2507.21802). [![[code]](https://img.shields.io/github/stars/Tencent-Hunyuan/MixGRPO)](https://github.com/Tencent-Hunyuan/MixGRPO)
-
-😊 Kling Team, CUHK MMLab, NJU, [VR-Thinker: Boosting Video Reward Models through Thinking-with-Image Reasoning](https://arxiv.org/pdf/2510.10518). [![[code]](https://img.shields.io/github/stars/qunzhongwang/vr-thinker)](https://github.com/qunzhongwang/vr-thinker)
-
-😊 CUHK MMLab, [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017). [![[code]](https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT)](https://github.com/ZiyuGuo99/Image-Generation-CoT)
-| Method     | HPS | ImageReward | UnifiedReward |
-|------------|-----------|-----------|-----------|
-|  Janus-Pro + DPO        | 77.3      | 77.7      | **80.0**      |
-| Janus-Pro + GRPO       | 79.2      | 79.3      | **81.0**      |
-| Janus-Pro + Best-of-4  | 82.1      | 82.4      | **84.5**      |
-
-😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models, and the [Tencent Hunyuan](https://hunyuan.tencent.com/) team for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
 
