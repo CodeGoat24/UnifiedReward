@@ -94,6 +94,8 @@ Welcome to try the latest version, and the inference code is available at [`infe
 
 😊 Tencent Hunyuan, [MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE](https://arxiv.org/pdf/2507.21802). [![[code]](https://img.shields.io/github/stars/Tencent-Hunyuan/MixGRPO)](https://github.com/Tencent-Hunyuan/MixGRPO)
 
+😊 Kling Team, CUHK MMLab, NJU, [VR-Thinker: Boosting Video Reward Models through Thinking-with-Image Reasoning](https://arxiv.org/pdf/2510.10518). [![[code]](https://img.shields.io/github/stars/qunzhongwang/vr-thinker)](https://github.com/qunzhongwang/vr-thinker)
+
 😊 CUHK MMLab, [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017). [![[code]](https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT)](https://github.com/ZiyuGuo99/Image-Generation-CoT)
 | Method     | HPS | ImageReward | UnifiedReward |
 |------------|-----------|-----------|-----------|
