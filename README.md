@@ -68,17 +68,6 @@
 😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 ## 🔥 News
-[2025/10/21] 🔥🔥🔥 We release **UnifiedReward-Edit**-[[7b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-7b)], a unified reward model for **both Text-to-Image and Image-to-Image generation**!!
-For image editing reward task, our models support:
-
->1. Pairwise Rank — directly judge which of two edited images is better.
->
->2. Pairwise Score — assign a separate score to each image in a pair.
->
->3. Pointwise Score — rate a single image on two axes: instruction-following and overall image quality.
-
-🚀 The I2I reward inference code is available at [`UnifiedReward-Edit/`](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Edit) directory, while T2I inference code is unchanged from previous models. The editing training data is preprocessed from [EditScore](https://huggingface.co/datasets/EditScore/EditScore-Reward-Data) and [EditReward](https://huggingface.co/datasets/TIGER-Lab/EditReward-Data). We sincerely appreciate all contributors!!
-
 
 [2025/9/25] 🔥🔥🔥 We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)].
 This version introduces several new capabilities:
