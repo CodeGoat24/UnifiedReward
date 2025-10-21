@@ -44,7 +44,6 @@
 
 > [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We release the **UnifiedReward**, **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring.
 
-
 ### ✨ **Awesome Works using UnifiedReward**
 
 😊 Meta, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589).
@@ -67,6 +66,32 @@
 | Janus-Pro + Best-of-4  | 82.1      | 82.4      | **84.5**      |
 
 😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
+
+## 🔥 News
+[2025/10/21] 🔥🔥🔥 We release **UnifiedReward-Edit**-[[7b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-7b)], a unified reward model for **both Text-to-Image and Image-to-Image generation**!!
+For image editing reward task, our models support:
+
+>1. Pairwise Rank — directly judge which of two edited images is better.
+>
+>2. Pairwise Score — assign a separate score to each image in a pair.
+>
+>3. Pointwise Score — rate a single image on two axes: instruction-following and overall image quality.
+
+🚀 The I2I reward inference code is available at [`UnifiedReward-Edit/`](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Edit) directory, while T2I inference code is unchanged from previous models. The editing training data is preprocessed from [EditScore](https://huggingface.co/datasets/EditScore/EditScore-Reward-Data) and [EditReward](https://huggingface.co/datasets/TIGER-Lab/EditReward-Data). We sincerely appreciate all contributors!!
+
+
+[2025/9/25] 🔥🔥🔥 We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)].
+This version introduces several new capabilities:
+>
+>1. **Pairwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence_**, **_Style_** dimensions.
+>
+>2. **Pointwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence/Physics_**, **_Style_** dimensions. 
+>
+The added inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory. The newly added training data has been released [here](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-T2X-score-data) 😊.
+
+
+😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
+
 
 <div align="center">
     <h1 align="center"> Unified Reward Model for Multimodal Understanding and Generation
@@ -102,18 +127,6 @@
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20LLaVA-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-models-67c3008148c3a380d15ac63a)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
 
-😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
-
-[2025/9/25] 🔥🔥🔥 We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)].
-This version introduces several new capabilities:
->
->1. **Pairwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence_**, **_Style_** dimensions.
->
->2. **Pointwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence/Physics_**, **_Style_** dimensions. 
->
-Welcome to try the latest version, and the inference code is available at [`inference_qwen/UnifiedReward-2.0-inference`](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) directory. The newly added training data has been released [here](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-T2X-score-data) 😊.
-
-🔥 We release **SGLang** and **vLLM** inference code in `sglang_llava` and `vllm_qwen` directories!
 
 😊 We appreciate the [mradermacher](https://huggingface.co/mradermacher) team for providing the [GGUF](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca) version of our models, and the [Tencent Hunyuan](https://hunyuan.tencent.com/) team for providing the evaluation results on several T2I models using [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!! The evaluation was conducted on 400 prompts sourced from [here](https://artificialanalysis.ai/text-to-image/arena?tab=arena). 
 
