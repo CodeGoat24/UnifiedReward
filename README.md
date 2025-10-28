@@ -120,9 +120,7 @@ The added inference code is available at [`inference_qwen/UnifiedReward-2.0-infe
 </a>
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%202.0%20Qwen-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-models-68b7c99ab70ff81184c70270)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%202.0-Datasets-yellow)](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-2.0-T2X-score-data)<br>
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20Qwen-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-models-67c3008148c3a380d15ac63a)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20Qwen-GGUF_Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-gguf-683fe14b5e2b8422049f45ca)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20LLaVA-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-models-67c3008148c3a380d15ac63a)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward%20-Datasets-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede)
 
