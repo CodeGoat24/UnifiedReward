@@ -68,7 +68,7 @@
 😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 ## 🔥 News
-[2025/10/23] 🔥🔥🔥 We release **UnifiedReward-Edit**-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-32b)], a unified reward model for **both Text-to-Image and Image-to-Image generation** trained on approximately 700K unified image generation and editing reward data!!
+[2025/10/23] 🔥🔥🔥 We release **UnifiedReward-Edit**-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-72b)], a unified reward model for **both Text-to-Image and Image-to-Image generation** trained on approximately 700K unified image generation and editing reward data!!
 For image editing reward task, our models support:
 
 >1. Pairwise Rank — directly judge which of two edited images is better.
