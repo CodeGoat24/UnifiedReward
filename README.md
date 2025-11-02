@@ -3,9 +3,22 @@
 <img src="./docs/static/images/logo_resize.png"  width="80%">
 </p>
 <div align="left">
-    <h2 align="left">  UnifiedReward Series Works
+    <h2 align="left">  UnifiedReward Team Works
     </h2>
 </div>
+
+<div align="left">
+    <h3 align="left">  Benchmarks
+    </h3>
+</div>
+
+> [**UniREditBench: A Unified Reasoning-based Image Editing Benchmark**](https://maplebb.github.io/UniREditBench/): We propose **UniREditBench**, a unified reasoning-based image editing benchmark, and further construct **UniREdit-Data-100K**, a large-scale synthetic dataset with high-quality CoT annotations, and develop **UniREdit-Bagel** by fine-tuning Bagel on this dataset.
+> <a href="https://maplebb.github.io/UniREditBench/">
+> <img src='https://img.shields.io/badge/Website-project page-orange' alt='Project Page'></a>
+> <a href="https://github.com/Maplebb/UniREditBench">
+> <img src='https://img.shields.io/badge/Github-UniREditBench-green' alt='Project Page'></a>
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UniREdit_Data_100K-yellow)](https://huggingface.co/datasets/maplebb/UniREdit-Data-100K)
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UniREdit_Bagel-yellow)](https://huggingface.co/maplebb/UniREdit-Bagel)
 
 > [**UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image Generation**](https://codegoat24.github.io/UniGenBench): We propose **UniGenBench++**, a unified semantic benchmark for T2I generation. It supports both **short and long prompts in Chinese and English**, featuring a **streamlined evaluation pipeline** and a robust **offline evaluation model**.
 > <a href="https://codegoat24.github.io/UniGenBench">
@@ -19,6 +32,10 @@
 > [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Leaderboard%20-English%20Long-orange)](https://huggingface.co/spaces/CodeGoat24/UniGenBench_Leaderboard_English_Long)
 > [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Leaderboard%20-Chinese%20Long-pink)](https://huggingface.co/spaces/CodeGoat24/UniGenBench_Leaderboard_Chinese_Long)
 
+<div align="left">
+    <h3 align="left">  Models
+    </h3>
+</div>
 
 > [**Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning**](https://codegoat24.github.io/UnifiedReward/Pref-GRPO): We propose **Pref-GRPO** and **UniGenbench**, the first **preference reward-based GRPO method** for stable T2I reinforcement learning, and a **unified T2I generation benchmark** for fine-grained semantic consistency evaluation.
 > <a href="https://codegoat24.github.io/UnifiedReward/Pref-GRPO">
