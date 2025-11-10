@@ -22,7 +22,7 @@ model.eval()
 
 import json
 
-dataset = load_dataset("KwaiVGI/VideoGen-RewardBench")['test']
+dataset = load_dataset("MMInstruction/VL-RewardBench")['test']
 
 group_correct = {}
 group_total = {}
