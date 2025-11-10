@@ -16,7 +16,7 @@ model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
 )
 processor = AutoProcessor.from_pretrained(model_path)
 
-dataset = load_dataset("KwaiVGI/VideoGen-RewardBench")['test']
+dataset = load_dataset("MMInstruction/VL-RewardBench")['test']
 
 group_correct = {'general': 0, 'hallucination': 0, 'reasoning': 0}
 group_total = {'general': 0, 'hallucination': 0, 'reasoning': 0}
