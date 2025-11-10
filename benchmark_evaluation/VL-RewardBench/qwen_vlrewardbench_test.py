@@ -5,6 +5,7 @@ import tqdm
 from PIL import Image
 import warnings
 import os
+from datasets import load_dataset
 from transformers import AutoProcessor, AutoTokenizer, Qwen2_5_VLForConditionalGeneration
 from qwen_vl_utils import process_vision_info
 
@@ -35,7 +36,7 @@ random.seed(0)
 
 for i in tqdm.trange(len(dataset)):
     data = dataset[i]
-    image = Image.open(data['image']).convert("RGB")
+    image = data['image']
 
     if data["human_ranking"][0] == 0:
         if random.random() < 0.5:
