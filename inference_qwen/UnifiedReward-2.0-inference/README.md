@@ -6,7 +6,9 @@
 conda create -n vllm python=3.11 -y
 conda activate vllm
 
-pip install vllm==0.9.0.1 transformers==4.52.4
+pip install vllm>=0.11.0
+
+pip install qwen-vl-utils==0.0.14
 ```
 
 ## 💪 2. Start the vLLM service in a new window (e.g., tmux)

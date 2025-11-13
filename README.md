@@ -248,7 +248,9 @@ We provide vLLM inference code for UnifiedReward-qwen in `vllm_qwen` directory.
 
 1. Install vLLM
 ```bash
-pip install vllm==0.9.0.1 transformers==4.52.4
+pip install vllm>=0.11.0
+
+pip install qwen-vl-utils==0.0.14
 ```
 2. Deploy vLLM Server
 ```bash

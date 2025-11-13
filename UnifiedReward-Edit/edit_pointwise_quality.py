@@ -34,6 +34,6 @@ input_data.append({
     'images': [image],
 })
 
-output = evaluate_batch(input_data, "http://28.49.197.37:8080")
+output = evaluate_batch(input_data, "http://localhost:8080")
 
 print(output[0]['model_output'])
