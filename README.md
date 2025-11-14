@@ -85,7 +85,7 @@
 😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 ## 🔥 News
-[2025/11/11] 🔥🔥🔥 We release **UnifiedReward-2.0-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-8b)] and **UnifiedReward-Edit-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-8b)]!!!
+[2025/11/11] 🔥🔥🔥 We release **UnifiedReward-2.0-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-32b)] and **UnifiedReward-Edit-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-8b)]!!!
 
 [2025/10/23] 🔥🔥🔥 We release **UnifiedReward-Edit**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-72b)], a unified reward model for **both Text-to-Image and Image-to-Image generation** trained on approximately 700K unified image generation and editing reward data!!
 For image editing reward task, our models support:
@@ -138,7 +138,7 @@ The added inference code is available at [`inference_qwen/UnifiedReward-2.0-infe
 
 <details>
 <summary>click for evaluation results on several T2I models</summary>
-    
+
 | Model                | Alignment | Coherence | Style |
 |---------------------|------------------|-----------------------|------------------|
 | Flux-pro-ultra      | 3.6453           | 3.8193                | 3.4971         |
@@ -387,7 +387,7 @@ bash dpo_video_understand_llava_video_7b.sh
 
 <details>
 <summary>🖼️ Image Generation DPO</summary>
-    
+
 #### 0. Prepare Environments
 ```bash
 cd DiffusionDPO
@@ -431,7 +431,7 @@ The training data format in `data.json` should adhere to the following structure
     },
     ...
 ]
- ```
+```
 Then start training:
 ```bash
 bash launchers/turbo_dpo.sh
@@ -440,7 +440,7 @@ bash launchers/turbo_dpo.sh
 
 <details>
 <summary>🎬 Video Generation DPO</summary>
-    
+
 #### 0. Prepare Environments
 ```bash
 cd VideoDPO
