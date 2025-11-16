@@ -85,9 +85,11 @@
 😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 ## 🔥 News
+[2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)].
+
 [2025/11/11] 🔥🔥🔥 We release **UnifiedReward-2.0-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-32b)] and **UnifiedReward-Edit-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-32b)]!!!
 
-[2025/10/23] 🔥🔥🔥 We release **UnifiedReward-Edit**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-72b)], a unified reward model for **both Text-to-Image and Image-to-Image generation** trained on approximately 700K unified image generation and editing reward data!!
+[2025/10/23] 🔥 We release **UnifiedReward-Edit**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen-72b)], a unified reward model for **both Text-to-Image and Image-to-Image generation** trained on approximately 700K unified image generation and editing reward data!!
 For image editing reward task, our models support:
 
 >1. Pairwise Rank — directly judge which of two edited images is better.
@@ -98,7 +100,7 @@ For image editing reward task, our models support:
 
 🚀 The image editing reward inference code is available at [`UnifiedReward-Edit/`](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Edit) directory, while T2I inference code is unchanged from previous models. The editing training data is preprocessed from [EditScore](https://huggingface.co/datasets/EditScore/EditScore-Reward-Data) and [EditReward](https://huggingface.co/datasets/TIGER-Lab/EditReward-Data) and will be released soon. We sincerely appreciate all contributors!!
 
-[2025/9/25] 🔥🔥🔥 We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)].
+[2025/9/25] 🔥 We release **UnifiedReward-2.0**-qwen-[[3b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-3b)/[7b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-7b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-32b)/[72b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen-72b)].
 This version introduces several new capabilities:
 >
 >1. **Pairwise scoring** for image and video generation assessment on **_Alignment_**, **_Coherence_**, **_Style_** dimensions.
@@ -160,12 +162,16 @@ Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuni
 <img src='https://img.shields.io/badge/arXiv-UnifiedReward Think-blue' alt='Paper PDF'></a>
 <a href="https://codegoat24.github.io/UnifiedReward/think">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
-</a>
+
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen3vl 8b-yellow">
 
 <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
+
+<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
+<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
+</a>
 </a>
 
 </div>
@@ -174,9 +180,7 @@ We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward 
 
 Please refer to the [README.md](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for training and inference details.
 
-**UnifiedReward-Think-qwen-2.0 [3b/7b/32b/72b] are coming soon!!**
-
-🔥🔥 We release [UnifiedReward-Think-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b), a more powerful unified multimodal CoT reward model built upon [UnifiedReward-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-qwen-7b)!!!!
+[2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)].
 
 🔥🔥 We released Gradio for UnifiedReward-Think!
 <p align="left" width="100%">
