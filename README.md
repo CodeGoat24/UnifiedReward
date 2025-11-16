@@ -85,7 +85,7 @@
 😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 ## 🔥 News
-[2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)].
+[2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
 
 [2025/11/11] 🔥🔥🔥 We release **UnifiedReward-2.0-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-32b)] and **UnifiedReward-Edit-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-32b)]!!!
 
@@ -180,7 +180,7 @@ We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward 
 
 Please refer to the [README.md](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for training and inference details.
 
-[2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)].
+[2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
 
 🔥🔥 We released Gradio for UnifiedReward-Think!
 <p align="left" width="100%">
