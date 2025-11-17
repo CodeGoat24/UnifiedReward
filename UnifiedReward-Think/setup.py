@@ -48,7 +48,7 @@ _deps = [
     "sentencepiece>=0.1.99",
     "torch>=2.5.1",
     "transformers",
-    "trl",
+    "trl==0.17.0",
     "vllm==0.6.6.post1",
     "wandb>=0.19.1",
     "pillow",
