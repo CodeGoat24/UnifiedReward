@@ -51,14 +51,9 @@
 > [**NeurIPS 2025**] [**Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning**](https://codegoat24.github.io/UnifiedReward/think): We propose **UnifiedReward-Think**, the first unified multimodal CoT reward model.
 > <a href="https://codegoat24.github.io/UnifiedReward/think">
 > <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
->
-> <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b">
-> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen3vl 8b-yellow">
-> </a>
-> <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
-> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
-> </a><a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
-> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UnifiedReward_Think_qwen3vl_8b-yellow)](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UnifiedReward_Think_qwen_7b-yellow)](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b)
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UnifiedReward_Think_llava_7b-yellow)](https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b)
 
 
 > [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We release the **UnifiedReward**, **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring.
@@ -165,16 +160,7 @@ Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuni
 <a href="https://codegoat24.github.io/UnifiedReward/think">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen3vl 8b-yellow">
-
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
-
-<a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
-<img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
-</a>
-</a>
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UnifiedReward_Think_qwen3vl_8b-yellow)](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UnifiedReward_Think_qwen_7b-yellow)](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b)[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-UnifiedReward_Think_llava_7b-yellow)](https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b)
 
 </div>
 
@@ -183,13 +169,6 @@ We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward 
 Please refer to the [README.md](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for training and inference details.
 
 [2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
-
-🔥🔥 We released Gradio for UnifiedReward-Think!
-<p align="left" width="100%">
-<img src="./docs/static/images/think/gradio_case.png"  width="80%">
-</p>
-
-<!-- <img src=./docs/static/images/pipeline.png width="100%"/> -->
 
 
 ## 🏁 Compared with Current Reward Models
