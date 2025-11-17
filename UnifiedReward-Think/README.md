@@ -31,14 +31,12 @@ through Reinforcement Fine-Tuning
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
 Please leave us a star ⭐ if you find our work helpful.
-- [2025/11/17] 🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
-- [2025/6/4] 🔥🔥 We released [UnifiedReward-Think-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b)!! All inference and evaluation code are provided in `qwen_inference` and `benchmark_evaluation` directories. 
+- [2025/11/17] 🔥🔥 We released **UnifiedReward-Think-qwen3vl**-[[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
+- [2025/6/4] 🔥🔥 We released [UnifiedReward-Think-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b)!! All inference and evaluation code are provided in `inference_qwen` and `benchmark_evaluation` directories. 
 - [2025/5/10] 🔥 We released Gradio code in `./UnifiedReward-Think/gradio` directory!
-- [2025/5/6] 🔥 We released all CoT reward reasoning codes in `./inference` directory. 
-- [2025/5/6] 🔥 We released the evaluation code in `benchmark_evaluation` directory.
+- [2025/5/6] 🔥 We released the evaluation code in `benchmark_evaluation` directory and all CoT reward reasoning codes in `./inference` directory.
 - [2025/5/6] 🔥 We released our LLaVA-based multimodal GRPO training code.
 - [2025/5/6] 🔥 We released our constructed cold-start dataset [ImageGen-CoT-Reward-5K](https://huggingface.co/datasets/CodeGoat24/ImageGen-CoT-Reward-5K) and GRPO training dataset in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede).
-- [2025/5/6] 🔥 We released **UnifiedReward-Think-7b** in [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-models-67c3008148c3a380d15ac63a).
 - [2025/5/6] 🔥 We released the [project page](https://codegoat24.github.io/UnifiedReward/think) and [paper](https://arxiv.org/pdf/2505.03318).
 
 ## 📖 Introduction

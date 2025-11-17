@@ -49,14 +49,16 @@
 
 
 > [**NeurIPS 2025**] [**Unified Multimodal Chain-of-Thought Reward Model through Reinforcement Fine-Tuning**](https://codegoat24.github.io/UnifiedReward/think): We propose **UnifiedReward-Think**, the first unified multimodal CoT reward model.
-><a href="https://codegoat24.github.io/UnifiedReward/think">
-><img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
-><a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
-><img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
-></a>
-><a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
-><img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
-></a>
+> <a href="https://codegoat24.github.io/UnifiedReward/think">
+> <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
+>
+> <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b">
+> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen3vl 8b-yellow">
+> </a>
+> <a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b">
+> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think qwen 7b-yellow">
+> </a><a href="https://huggingface.co/CodeGoat24/UnifiedReward-Think-7b">
+> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20UnifiedReward Think 7b-yellow">
 
 
 > [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We release the **UnifiedReward**, **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring.
