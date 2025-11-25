@@ -31,7 +31,8 @@ through Reinforcement Fine-Tuning
 😊 We are actively gathering feedback from the community to improve our models. **We welcome your input and encourage you to stay updated through our repository**!!
 
 Please leave us a star ⭐ if you find our work helpful.
-[2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-32b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
+
+- [2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-32b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
 - [2025/6/4] 🔥🔥 We released [UnifiedReward-Think-qwen-7b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen-7b)!! All inference and evaluation code are provided in `inference_qwen` and `benchmark_evaluation` directories. 
 - [2025/5/10] 🔥 We released Gradio code in `./UnifiedReward-Think/gradio` directory!
 - [2025/5/6] 🔥 We released the evaluation code in `benchmark_evaluation` directory and all CoT reward reasoning codes in `./inference` directory.
