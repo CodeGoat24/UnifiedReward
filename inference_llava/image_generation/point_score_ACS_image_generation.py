@@ -33,7 +33,7 @@ image_path = '/path/to/image'
 prompt ='' #prompt of the given image
 
 
-image = Image.open(image_path).convert('RGB').resize((512, 512))
+image = Image.open(image_path).convert('RGB')
 
 image_tensor = process_images([image], image_processor, model.config)
 image_tensor = [_image.to(dtype=torch.float16, device=device) for _image in image_tensor]

@@ -30,8 +30,8 @@ image_path_2 = '/path/to/image2'
 
 prompt = "" # prompt of given images
 
-image1 = Image.open(image_path_1).resize((512, 512))
-image2 = Image.open(image_path_2).resize((512, 512))
+image1 = Image.open(image_path_1)
+image2 = Image.open(image_path_2)
 
 image_tensor = process_images([image1, image2], image_processor, model.config)
 image_tensor = [_image.to(dtype=torch.float16, device=device) for _image in image_tensor]
