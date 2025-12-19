@@ -62,9 +62,15 @@
 
 😊 Meta, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589).
 
+😊 Meta, [Multimodal RewardBench 2: Evaluating Omni Reward Models for Interleaved Text and Image](https://arxiv.org/pdf/2512.16899).
+
 😊 NVIDIA, Stanford, Tsinghua, [DiffusionNFT: Online Diffusion Reinforcement with Forward Process](https://arxiv.org/pdf/2509.16117). [![[code]](https://img.shields.io/github/stars/NVlabs/DiffusionNFT)](https://github.com/NVlabs/DiffusionNFT)
 
 😊 Apple, Fudan, [UniGen-1.5: Enhancing Image Generation and Editing through Reward Unification in Reinforcement Learning](https://arxiv.org/pdf/2511.14760).
+
+😊 ByteDance, [MammothModa2: A Unified AR–Diffusion Framework for Multimodal Understanding and Generation](https://arxiv.org/pdf/2511.18262).
+
+😊 NPU, PKU, CUHK, [Are We Ready for RL in Text-to-3D Generation? A Progressive Investigation](https://arxiv.org/pdf/2512.10949).
 
 😊 University of California, USTC, PKU, BIGAI, [MILR: Improving Multimodal Image Generation via Test-time Latent Reasoning](https://arxiv.org/pdf/2509.22761).
 
@@ -72,7 +78,7 @@
 
 😊 Tencent Hunyuan, [MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE](https://arxiv.org/pdf/2507.21802). [![[code]](https://img.shields.io/github/stars/Tencent-Hunyuan/MixGRPO)](https://github.com/Tencent-Hunyuan/MixGRPO)
 
-😊 Kling Team, CUHK MMLab, NJU, [VR-Thinker: Boosting Video Reward Models through Thinking-with-Image Reasoning](https://arxiv.org/pdf/2510.10518). [![[code]](https://img.shields.io/github/stars/qunzhongwang/vr-thinker)](https://github.com/qunzhongwang/vr-thinker)
+😊 Kling Team, CUHK MMLab, NJU, [VR-Thinker: Boosting Video Reward Models through Thinking-with-Image Reasoning](https://arxiv.org/pdf/2510.10518).
 
 😊 CUHK MMLab, [Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO](https://arxiv.org/pdf/2505.17017). [![[code]](https://img.shields.io/github/stars/ZiyuGuo99/Image-Generation-CoT)](https://github.com/ZiyuGuo99/Image-Generation-CoT)
 | Method     | HPS | ImageReward | UnifiedReward |
