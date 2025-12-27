@@ -1,22 +1,22 @@
 from llava.model.builder import load_pretrained_model
-from llava.mm_utils import get_model_name_from_path, process_images, tokenizer_image_token
-from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IGNORE_INDEX
-from llava.conversation import conv_templates, SeparatorStyle
+from llava.mm_utils import tokenizer_image_token
+from llava.constants import IMAGE_TOKEN_INDEX
+from llava.conversation import conv_templates
 
 from PIL import Image
-import requests
+
 import copy
 import torch
 import tqdm
-import sys
+
 import warnings
-import os
-from datasets import load_dataset, load_from_disk
+
+from datasets import load_dataset
 import random
 pretrained = "CodeGoat24/UnifiedReward-7b"
 
 def _load_video(video_path, num_video_frames, loader_fps, fps=None, frame_count=None):
-        from torchvision import transforms
+
 
         from llava.mm_utils import opencv_extract_frames
 
@@ -47,8 +47,8 @@ def get_results(video_path_1, video_path_2, prompt):
     )
     images.extend(images_)
     image_sizes = []
+    images = [img.resize((512, 512)) for img in images]
     for img in images:
-        img.resize((512, 512))
         image_sizes.append(img.size)
 
     image_tensor = image_processor.preprocess(images, return_tensors="pt")["pixel_values"].cuda().bfloat16()
@@ -87,7 +87,7 @@ def get_results(video_path_1, video_path_2, prompt):
 
     return output
 
-import json
+
 dataset = load_dataset("TIGER-Lab/GenAI-Bench", 'video_generation')['test']
 
 warnings.filterwarnings("ignore")

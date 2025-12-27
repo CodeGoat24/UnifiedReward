@@ -1,14 +1,14 @@
-import torch
-import os
-import json
-import random
-from PIL import Image
+
+
+
+
+
 from tqdm import trange
 import warnings
 
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from qwen_vl_utils import process_vision_info
-from datasets import load_dataset, load_from_disk
+from datasets import load_dataset
 warnings.filterwarnings("ignore")
 
 model_path = 'CodeGoat24/UnifiedReward-qwen-7b'
@@ -84,4 +84,3 @@ accuracy = correct / num_all
 accuracy_no_tie = (correct - correct_tie) / (num_all - num_tie)
 print(f"Acc.: {correct} / {num_all} = {accuracy:.4f}")
 print(f"Acc. w/o tie: ({correct} - {correct_tie}) / ({num_all} - {num_tie}) = {accuracy_no_tie:.4f}")
-

@@ -1,8 +1,8 @@
-import torch
-import os
-import json
+
+
+
 import random
-from PIL import Image
+
 from tqdm import trange
 import warnings
 from datasets import load_dataset
@@ -101,4 +101,3 @@ accuracy = correct / num_all
 accuracy_no_tie = (correct - correct_tie) / (num_all - num_tie)
 print(f"Acc.: {correct} / {num_all} = {accuracy:.4f}")
 print(f"Acc. w/o tie: ({correct} - {correct_tie}) / ({num_all} - {num_tie}) = {accuracy_no_tie:.4f}")
-

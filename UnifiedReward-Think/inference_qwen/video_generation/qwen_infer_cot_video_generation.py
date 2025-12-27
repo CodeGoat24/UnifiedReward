@@ -1,9 +1,9 @@
-import torch
-import os
-import json
-import random
-from PIL import Image
-from tqdm import trange
+
+
+
+
+
+
 import warnings
 
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
@@ -42,5 +42,3 @@ generated_ids_trimmed = [out[len(inp):] for inp, out in zip(inputs.input_ids, ge
 output_text = processor.batch_decode(generated_ids_trimmed, skip_special_tokens=True)[0]
 
 print(output_text)
-
-

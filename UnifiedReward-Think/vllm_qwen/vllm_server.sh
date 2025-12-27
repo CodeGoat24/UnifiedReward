@@ -6,4 +6,7 @@ vllm serve CodeGoat24/UnifiedReward-Think-qwen3vl-8b \
     --tensor-parallel-size 4 \
     --pipeline-parallel-size 1 \
     --limit-mm-per-prompt.image 16 \
-    --port 8080
+    --port 8080 \
+    --enable-prefix-caching \
+    --disable-log-requests \
+    --mm_processor_cache_gb=500

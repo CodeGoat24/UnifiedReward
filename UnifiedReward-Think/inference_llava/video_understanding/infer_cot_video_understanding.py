@@ -1,22 +1,23 @@
 from llava.model.builder import load_pretrained_model
-from llava.mm_utils import get_model_name_from_path, process_images, tokenizer_image_token
-from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IGNORE_INDEX
-from llava.conversation import conv_templates, SeparatorStyle
+from llava.mm_utils import tokenizer_image_token
+from llava.constants import IMAGE_TOKEN_INDEX
+from llava.conversation import conv_templates
 
 from PIL import Image
-import requests
+
 import copy
 import torch
-import tqdm
+
 import warnings
-import os
-from datasets import load_dataset
+
+
+import random
 
 warnings.filterwarnings("ignore")
 pretrained = "CodeGoat24/UnifiedReward-Think-7b"
 
 def _load_video(video_path, num_video_frames, loader_fps, fps=None, frame_count=None):
-        from torchvision import transforms
+
 
         from llava.mm_utils import opencv_extract_frames
 
@@ -53,10 +54,8 @@ frame_count = None
 images, frames_loaded = _load_video(
     video_path, num_video_frames, loader_fps, fps=fps, frame_count=frame_count
 )
-image_sizes = []
-for img in images:
-    img.resize((512, 512))
-    image_sizes.append(img.size)
+images = [img.resize((512, 512)) for img in images]
+image_sizes = [img.size for img in images]
 
 image_tensor = image_processor.preprocess(images, return_tensors="pt")["pixel_values"].cuda().bfloat16()
 
@@ -79,7 +78,7 @@ question = ('<image>\n'*len(images) + "Given a question and a reference video, p
                 "2. Correctness: Answer 1 (7/10) - ...; Answer 2 (6/10) - ...\n" \
                 "3. Clarity: Answer 1 (9/10) - ...; Answer 2 (8/10) - ...\n" \
                 "[Additional dimensions if any]: Answer 1 (7/10) - ...; Answer 2 (6/10) - ...\n" \
-                "Total score:\Answer 1: 8+7+9+7=31\Answer 2: 9+6+8+6=29\n" \
+                "Total score:\nAnswer 1: 8+7+9+7=31\nAnswer 2: 9+6+8+6=29\n" \
                 "</think>\n" \
                 "<answer>Answer 1 is better</answer>\n\n" \
                 "**Note: In the example above, scores and the final answer are placeholders meant only to demonstrate the format. Your actual evaluation should be based on the quality of two given answers.**\n\n" \
@@ -105,4 +104,3 @@ with torch.cuda.amp.autocast():
 text_outputs = tokenizer.batch_decode(cont, skip_special_tokens=True)
 
 print(text_outputs[0])
-        

@@ -6,7 +6,7 @@ from datasets import load_dataset
 from io import BytesIO
 import base64
 
-from vllm_request import evaluate_batch
+from vllm_qwen.vllm_request import evaluate_batch
 
 warnings.filterwarnings("ignore")
 

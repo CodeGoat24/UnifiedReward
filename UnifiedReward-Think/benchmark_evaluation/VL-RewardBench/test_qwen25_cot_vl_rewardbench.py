@@ -1,11 +1,11 @@
-import json
+
 import random
 import torch
 import tqdm
 from PIL import Image
 import warnings
-import os
-from transformers import AutoProcessor, AutoTokenizer, Qwen2_5_VLForConditionalGeneration
+
+from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
 from qwen_vl_utils import process_vision_info
 
 warnings.filterwarnings("ignore")

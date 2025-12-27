@@ -251,7 +251,7 @@ bash vllm_qwen/vllm_server.sh
 
 3. Inference Request to vLLM Server
 ```bash
-python vllm_qwen/vllm_inference.py
+python vllm_qwen/vllm_request.py --prompt_path /path/to/your/prompt.json
 ```
 
 ### 2. SGLang Inference

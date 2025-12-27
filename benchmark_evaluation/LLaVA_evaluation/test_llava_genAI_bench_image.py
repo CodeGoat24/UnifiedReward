@@ -1,17 +1,17 @@
 from llava.model.builder import load_pretrained_model
-from llava.mm_utils import get_model_name_from_path, process_images, tokenizer_image_token
-from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IGNORE_INDEX
-from llava.conversation import conv_templates, SeparatorStyle
-import itertools
-from PIL import Image
-import requests
+from llava.mm_utils import process_images, tokenizer_image_token
+from llava.constants import IMAGE_TOKEN_INDEX
+from llava.conversation import conv_templates
+
+
+
 import copy
 import torch
 import warnings
-import os
-from datasets import load_dataset, load_from_disk
+
+from datasets import load_dataset
 import tqdm
-import json
+
 
 pretrained = "CodeGoat24/UnifiedReward-7b"
 dataset = load_dataset("TIGER-Lab/GenAI-Bench", 'image_generation')['test']

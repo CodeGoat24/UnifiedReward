@@ -1,13 +1,13 @@
-from datasets import load_from_disk
-from PIL import Image
-import torch
-import tqdm
+
+
+
+
 import os
-import random
-import json
-from io import BytesIO
-import base64
-from vllm_request import evaluate_batch
+
+
+
+
+from vllm_qwen.vllm_request import evaluate_batch
 
 import cv2
 
@@ -54,6 +54,8 @@ prompt = ""
 video_path = ''
 
 images = read_video_frames(video_path, num_frames=16, save_dir="./frames", prefix="video")
+if not images:
+    raise SystemExit(f"No frames extracted from video: {video_path}")
 
 problem = (
     "You are presented with a generated video and its associated text caption. "

@@ -8,7 +8,7 @@ import decord
 from datasets import load_dataset
 import tqdm
 
-from vllm_request import evaluate_batch
+from vllm_qwen.vllm_request import evaluate_batch
 
 
 def encode_img(img: Image.Image):

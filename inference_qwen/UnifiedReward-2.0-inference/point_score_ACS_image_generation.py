@@ -1,13 +1,13 @@
-from datasets import load_from_disk
+
 from PIL import Image
-import torch
-import tqdm
-import os
-import random
-import json
+
+
+
+
+
 from io import BytesIO
 import base64
-from vllm_request import evaluate_batch
+from vllm_qwen.vllm_request import evaluate_batch
 
 def _encode_image(image):
     if isinstance(image, str):

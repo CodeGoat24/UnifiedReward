@@ -1,11 +1,11 @@
-import json
-import random
+
+
 import torch
-import tqdm
+
 from PIL import Image
 import warnings
-import os
-from transformers import AutoProcessor, AutoTokenizer, Qwen2_5_VLForConditionalGeneration
+
+from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
 from qwen_vl_utils import process_vision_info
 
 warnings.filterwarnings("ignore")
@@ -92,3 +92,4 @@ generated_trimmed = [
     out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
 ]
 output = processor.batch_decode(generated_trimmed, skip_special_tokens=True)[0]
+print(output)

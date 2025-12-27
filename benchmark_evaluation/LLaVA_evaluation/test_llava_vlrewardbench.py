@@ -1,14 +1,14 @@
 from llava.model.builder import load_pretrained_model
-from llava.mm_utils import get_model_name_from_path, process_images, tokenizer_image_token
-from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IGNORE_INDEX
-from llava.conversation import conv_templates, SeparatorStyle
-from PIL import Image
-import requests
+from llava.mm_utils import process_images, tokenizer_image_token
+from llava.constants import IMAGE_TOKEN_INDEX
+from llava.conversation import conv_templates
+
+
 import copy
 import torch
 import tqdm
 import warnings
-import os
+
 from datasets import load_dataset
 import random
 warnings.filterwarnings("ignore")
@@ -20,7 +20,7 @@ device_map = "auto"
 tokenizer, model, image_processor, max_length = load_pretrained_model(pretrained, None, model_name, device_map=device_map)  # Add any other thing you want to pass in llava_model_args
 model.eval()
 
-import json
+
 
 dataset = load_dataset("MMInstruction/VL-RewardBench")['test']
 

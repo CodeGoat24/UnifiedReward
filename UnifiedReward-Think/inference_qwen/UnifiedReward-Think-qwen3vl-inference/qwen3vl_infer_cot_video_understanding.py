@@ -4,7 +4,7 @@ from PIL import Image
 import cv2
 import numpy as np
 
-from vllm_request import evaluate_batch
+from vllm_qwen.vllm_request import evaluate_batch
 
 
 def _encode_image(img: Image.Image):

@@ -1,12 +1,12 @@
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 from qwen_vl_utils import process_vision_info
-from datasets import load_dataset, load_from_disk
-from PIL import Image
+from datasets import load_dataset
+
 import torch
 import tqdm
-import os
+
 import random
-import json
+
 
 model_path = 'CodeGoat24/UnifiedReward-qwen-7b'
 model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
@@ -31,15 +31,15 @@ for i in tqdm.trange(len(dataset)):
         continue
 
     if random.choices([True, False])[0]:
-        left_image = data['right_image'].resize((512, 512))
-        right_image = data['left_image'].resize((512, 512))
+        left_image = data['right_image']
+        right_image = data['left_image']
         if 'left' in data['vote_type']:
             data['vote_type'] = 'right'
         elif 'right' in data['vote_type']:
             data['vote_type'] = 'left'
     else:
-        left_image = data['left_image'].resize((512, 512))
-        right_image = data['right_image'].resize((512, 512))
+        left_image = data['left_image']
+        right_image = data['right_image']
 
     prompt = data['prompt']
 

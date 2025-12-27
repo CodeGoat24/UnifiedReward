@@ -5,7 +5,7 @@ from io import BytesIO
 import base64
 from PIL import Image
 
-from vllm_request import evaluate_batch
+from vllm_qwen.vllm_request import evaluate_batch
 
 def _encode_image(img: Image.Image):
     img = img.convert("RGB")

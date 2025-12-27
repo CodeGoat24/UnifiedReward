@@ -1,13 +1,13 @@
-from datasets import load_from_disk
-from PIL import Image
-import torch
-import tqdm
+
+
+
+
 import os
-import random
-import json
-from io import BytesIO
-import base64
-from vllm_request import evaluate_batch
+
+
+
+
+from vllm_qwen.vllm_request import evaluate_batch
 
 import cv2
 
@@ -58,6 +58,8 @@ video_path_2 = ''
 
 images.extend(read_video_frames(video_path_1, num_frames=8, save_dir="./frames", prefix="video1"))
 images.extend(read_video_frames(video_path_2, num_frames=8, save_dir="./frames", prefix="video2"))
+if not images:
+    raise SystemExit(f"No frames extracted from videos: {video_path_1}, {video_path_2}")
 
 problem = (
     "You are presented with two generated videos (Video 1 and Video 2) along with a shared text caption. "

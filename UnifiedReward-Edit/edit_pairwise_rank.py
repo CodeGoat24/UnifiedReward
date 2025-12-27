@@ -1,11 +1,8 @@
-from PIL import Image
-import torch
-import tqdm
-import os
-import json
 from io import BytesIO
 import base64
-from vllm_request import evaluate_batch
+
+from PIL import Image
+from vllm_qwen.vllm_request import evaluate_batch
 
 def _encode_image(image):
     if isinstance(image, str):
@@ -37,4 +34,4 @@ input_data.append({
 
 output = evaluate_batch(input_data, "http://localhost:8080")
 
-print(item['model_output'])
+print(output[0]['model_output'])

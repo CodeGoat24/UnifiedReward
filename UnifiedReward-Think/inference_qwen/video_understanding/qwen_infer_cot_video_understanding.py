@@ -1,9 +1,9 @@
-import torch
-import os
-import json
-import random
-from PIL import Image
-from tqdm import trange
+
+
+
+
+
+
 import warnings
 
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
@@ -44,7 +44,7 @@ messages = [
                 "2. Correctness: Answer 1 (7/10) - ...; Answer 2 (6/10) - ...\n" \
                 "3. Clarity: Answer 1 (9/10) - ...; Answer 2 (8/10) - ...\n" \
                 "[Additional dimensions if any]: Answer 1 (7/10) - ...; Answer 2 (6/10) - ...\n" \
-                "Total score:\Answer 1: 8+7+9+7=31\Answer 2: 9+6+8+6=29\n" \
+                "Total score:\nAnswer 1: 8+7+9+7=31\nAnswer 2: 9+6+8+6=29\n" \
                 "</think>\n" \
                 "<answer>Answer 1 is better</answer>\n\n" \
                 "**Note: In the example above, scores and the final answer are placeholders meant only to demonstrate the format. Your actual evaluation should be based on the quality of two given answers.**\n\n" \
@@ -62,5 +62,3 @@ generated_ids_trimmed = [out[len(inp):] for inp, out in zip(inputs.input_ids, ge
 output_text = processor.batch_decode(generated_ids_trimmed, skip_special_tokens=True)[0]
 
 print(output_text)
-
-
