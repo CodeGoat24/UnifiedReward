@@ -58,6 +58,15 @@
 
 > [**Unified Reward Model for Multimodal Understanding and Generation**](https://codegoat24.github.io/UnifiedReward/): We release the **UnifiedReward**, **the first unified reward model for multimodal understanding and generation assessment**, enabling both pairwise ranking and pointwise scoring.
 
+## 🤖 UnifiedReward Model Zoo
+
+| Model Name | Version | Inference Code Path | Info |
+| --- | --- | --- | ---|
+| **UnifiedReward-Edit** | [Qwen3-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-edit-models) / [Qwen25-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-edit-models) | [Qwen3-VL / Qwen25-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Edit) | **Unified image generation & editing** reward, trained on UnifiedReward-2.0. |
+| **UnifiedReward-2.0** | [Qwen3-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-qwen3vl-models) / [Qwen25-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-qwen25vl-models) | [New](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) / [Classic](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen) Capabilities | New capabilities added for **image & video generation reward**.|
+| **UnifiedReward-Think** | [Qwen3-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-qwen3vl-models) / [Qwen25-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-qwen25vl-models) / [LLaVA](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-llava-model) | [Qwen3-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference) / [Qwen25-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen) / [LLaVA](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_llava) | **CoT integration** to all vision reward tasks. |
+| **UnifiedReward** | [Qwen25-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-qwen25vl-models) / [LLaVA](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-llava-model) | [Qwen25-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen) / [LLaVA](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_llava) | **Unified image&video und./gen.** reward models. |
+
 ### ✨ **Awesome Works using UnifiedReward**
 
 😊 Meta, [Transition Matching: Scalable and Flexible Generative Modeling](https://arxiv.org/pdf/2506.23589).
