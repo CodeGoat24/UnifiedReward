@@ -31,16 +31,11 @@ for i in tqdm.trange(len(dataset)):
     else:
         continue
     
-    if random.choices([True, False])[0]:
-        left_image = data['right_image']
-        right_image = data['left_image']
-        if 'left' in data['vote_type']:
-            data['vote_type'] = 'right'
-        elif 'right' in data['vote_type']:
-            data['vote_type'] = 'left'
-    else:
-        left_image = data['left_image']
-        right_image = data['right_image']
+    left_image = data['left_image']
+    right_image = data['right_image']
+    if random.random() < 0.5:
+        left_image, right_image = right_image, left_image
+        answer = "Image 2 is better" if answer == "Image 1 is better" else "Image 1 is better"
 
     prompt = data['prompt']
 
