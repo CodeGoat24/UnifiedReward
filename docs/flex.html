@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style></style>
+  
+  <meta name="description" content="Unified Personalized Reward Model for Vision Generation">
+  <meta name="keywords" content="Reward Model, CoT, Reinforcement Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnifiedReward-Flex</title>
+
+
+  <link rel="shortcut icon" href="https://picx.zhimg.com/v2-cb40b1f8c3125f3cfb9a4538e1c0f2b7_l.jpg?source=32738c0c" type="image/x-icon">
+  <link href="./static/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/bulma.min.css">
+  <link rel="stylesheet" href="./static/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/academicons.min.css">
+  <link rel="stylesheet" href="./static/index.css">
+  <link rel="stylesheet" href="./static/leaderboard.css">
+
+  <script type="text/javascript" src="./static/sort-table.js" defer=""></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer="" src="./static/fontawesome.all.min.js"></script>
+  <script src="./static/bulma-carousel.min.js"></script>
+  <script src="./static/bulma-slider.min.js"></script>
+  <script src="./static/explorer-index.js"></script>
+  <script src="./static/question_card.js"></script>
+
+  <script src="./static/leaderboard_testmini.js"></script>  
+  <script src="./static/output_folders.js" defer=""></script>
+  <script src="./static/model_scores.js" defer=""></script>
+
+  <script src="./static/data_public.js" defer=""></script>
+
+  <style>
+      .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: -20px;
+        }
+    .video-compare-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+    .video-compare {
+      display: block;
+      width: 100%;
+      border-radius: 8px;
+    }
+    .video-caption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+      letter-spacing: 0.2px;
+    }
+    .video-compare-group {
+      margin-top: 18px;
+    }
+    .video-prompt-title {
+      margin: 0 auto 10px;
+      max-width: 920px;
+      padding: 0 8px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #2f2f2f;
+      text-align: center;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+    .hero.teaser .title.is-3 {
+      white-space: nowrap;
+      width: auto;
+      max-width: none;
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      .hero.teaser .title.is-3 {
+        white-space: normal;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .container.is-max-desktop {
+        max-width: 1200px;
+      }
+      .hero.teaser .container.is-max-desktop {
+        max-width: 1400px;
+      }
+    }
+    .node {
+      fill: #f8f1e4;
+      stroke: #000;
+      stroke-width: 1;
+      rx: 10;
+      ry: 10;
+    }
+    .node text {
+      font-size: 14px;
+      text-anchor: middle;
+    }
+    .link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 2;
+    }
+    .badge {
+      font-size: 12px;
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold" style="display: inline-block; margin-right: 0px;">
+            <span style="vertical-align: middle">Unified Personalized Reward Model for Vision Generation</span>
+            </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://codegoat24.github.io/"><b>Yibin Wang</b></a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://yuhangzang.github.io/"><b>Yuhang Zang</b></a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://yuhangzang.github.io/"><b>Feng Han</b></a><sup>1,2</sup>,</span>
+            <span class="author-block">
+               <a href="https://scholar.google.com.hk/citations?user=XLnXvPwAAAAJ&hl=zh-TW"><b>Yujie Zhou</b></a><sup>3,4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=a8h9Di4AAAAJ&hl=zh-TW"><b>Jiazi Bu</b></a><sup>3,4</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://cjinfdu.github.io/"><b>Cheng Jin</b></a><sup>1,2</sup><sup></sup>,</span>
+              <span class="author-block">
+                <a href="https://myownskyw7.github.io/"><b>Jiaqi Wang</b></a><sup>2</sup><sup></sup></span>
+            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 15px;"><sup>1</sup>Fudan University,</span> 
+            <span class="author-block" style="margin-right: 15px;"><sup>2</sup>Shanghai Innovation Institute,</span><br>
+            <span class="author-block" style="margin-right: 15px;"><sup>3</sup>Shanghai Jiaotong University,</span>
+            <span class="author-block" style="margin-right: 15px;"><sup>4</sup>Shanghai AI Lab</span><br>
+            <!-- <span class="paper-block">Accetped by<b style="color:#f41c1c"> </b></span> -->
+          </div>
+<!--           <span class=""><sup>*</sup>Equal Contribution</span>
+          <span class=""><sup>†</sup>Corresponding Authors</span> -->
+          
+        
+          <!-- ArXiv Link. -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CodeGoat24/UnifiedReward" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>UnifiedReward-Flex</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/CodeGoat24/Pref-GRPO" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Pref-GRPO</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Checkpoints</span>
+                </a>
+              </span> 
+
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span> 
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Begin Teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Image Generation Personalized Reasoning</h3>
+      </div>
+    </div>
+    <div class="content has-text-centered">
+      <img src="static/images/flex/flex_image_case.png" alt="data-overview" width="800" height="600">
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Video Generation Personalized Reasoning</h3>
+      </div>
+    </div>
+    <div class="content has-text-centered">
+      <img src="static/images/flex/flex_video_case.png" alt="data-overview" width="800" height="600">
+    </div>
+  </div>
+</section>
+<!-- End Teaser -->
+
+
+    <!--/ Abstract. -->
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Reward Model Comparison</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/flex/reward_model_comparison.png" alt="pipeline" >
+      </div>
+    </div>
+    
+    
+  </div>
+
+
+
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Text-to-Image Generation GRPO</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/quantitative_image_grpo.png" alt="pipeline" >
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/qualitative_image_grpo.png" alt="pipeline" >
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Text-to-Video Generation GRPO</h2>
+
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/quantitative_video_grpo.png" alt="pipeline" >
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/qualitative_video_grpo.png" alt="pipeline" >
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Training Progress Visualization</h2>
+
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/flex/image_monitor.png" alt="pipeline" >
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm;">
+        <img src="./static/images/flex/video_monitor.png" alt="pipeline" >
+      </div>
+    </div>
+    
+  </div>
+</section>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+
+    </code></pre>
+  </div>
+</section>
+
+<section class="section" id="VideoCompare">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Comparison</h2>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">2 guys talking near a big tree, animation style</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/a8681754-22ad-4858-97aa-e56bc8d526d0" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/e6a1344b-d7fa-4dc6-ac18-a2aa4d3dd415" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">Alien couple performing a massive concert in a violet cyberpunk world, vibrant, psychdellic 4k, 1080p</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/a31f9322-eb7c-45d8-929d-c8bc0e166981" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/337ab2ea-27a5-4ca7-ad53-7c6f2f020577" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">An Iron man is playing the electronic guitar, high electronic guitar</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/e4cc55a4-5329-4a6a-a4ca-7f91e358a649" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/4024f6d2-6a10-47d8-9374-0a33f4294e55" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">Origami dancers in white paper, 3D render, on white background, studio shot, dancing modern dance</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/ba78a8ec-d6da-4ddc-b49b-4810b9f49132" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/c19adc2b-71c7-405f-a52d-791716caef37" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">Robot dancing in Times Square</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/55832b0b-8606-4a29-ab02-2cdd7d69dffc" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/94329f0a-63ef-40f3-b15c-021982b97da0" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">all AI models fighting in mortal kombat</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/e1d824c7-650d-4f4e-b295-20f4eb43a060" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/5cdefea8-db1c-46dd-b367-868d98420189" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">human girl talk to cute dragon, pixar, disney</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/1d487054-2bea-4971-bdb3-200faad31be0" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/ab0c5277-60f5-479f-8151-afdb4275fcf2" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">unicorn running in the beautiful garden with rainbow</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/6116b086-5489-4bda-827b-e05fcc140d20" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="https://github.com/user-attachments/assets/377e0960-99df-4b6e-b268-5bf03dfaf5f6" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body></html>
