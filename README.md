@@ -37,6 +37,12 @@
     </h3>
 </div>
 
+> [Coming soon!!] [**Unified Personalized Reward Model for Vision Generation**](https://codegoat24.github.io/UnifiedReward/flex): We propose **UnifiedReward-Flex**, a **unified personalized reward model** for vision generation.
+> <a href="https://codegoat24.github.io/UnifiedReward/flex">
+> <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-flex)
+> [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-Flex-SFT-90K)
+
 > [**Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning**](https://codegoat24.github.io/UnifiedReward/Pref-GRPO): We propose **Pref-GRPO** and **UniGenbench**, the first **preference reward-based GRPO method** for stable T2I reinforcement learning, and a **unified T2I generation benchmark** for fine-grained semantic consistency evaluation.
 > <a href="https://codegoat24.github.io/UnifiedReward/Pref-GRPO">
 > <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
@@ -62,6 +68,7 @@
 
 | Model Name | Version | Inference Code Path | Info |
 | --- | --- | --- | ---|
+| **UnifiedReward-Flex** | [Qwen3-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-flex) | [Qwen3-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Flex) | **Unified personalized reward model** for vision generation. |
 | **UnifiedReward-Edit** | [Qwen3-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-edit-models) / [Qwen25-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-edit-models) | [Qwen3-VL / Qwen25-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Edit) | **Unified image generation & editing** reward, trained on UnifiedReward-2.0. |
 | **UnifiedReward-2.0** | [Qwen3-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-qwen3vl-models) / [Qwen25-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-qwen25vl-models) | [New](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen/UnifiedReward-2.0-inference) / [Classic](https://github.com/CodeGoat24/UnifiedReward/tree/main/inference_qwen) Capabilities | New capabilities added for **image & video generation reward**.|
 | **UnifiedReward-Think** | [Qwen3-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-20-qwen3vl-models) / [Qwen25-VL](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-qwen25vl-models) / [LLaVA](https://huggingface.co/collections/CodeGoat24/unifiedreward-10-llava-model) | [Qwen3-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference) / [Qwen25-VL](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen) / [LLaVA](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_llava) | **CoT integration** to all vision reward tasks. |
@@ -99,6 +106,9 @@
 😊 Tencent Hunyuan X, [X-Omni: Reinforcement Learning Makes Discrete Autoregressive Image Generative Models Great Again](https://arxiv.org/pdf/2507.22058). [![[code]](https://img.shields.io/github/stars/X-Omni-Team/X-Omni)](https://github.com/X-Omni-Team/X-Omni)
 
 ## 🔥 News
+[2026/2/01] 🔥🔥🔥 We release **[UnifiedReward-Flex-qwen3vl](https://huggingface.co/collections/CodeGoat24/unifiedreward-flex)** and its training data [UnifiedReward-Flex-SFT-90K](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-Flex-SFT-90K). The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Flex).
+
+
 [2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-32b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
 
 [2025/11/11] 🔥🔥🔥 We release **UnifiedReward-2.0-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-2.0-qwen3vl-32b)] and **UnifiedReward-Edit-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Edit-qwen3vl-32b)]!!!
@@ -186,6 +196,21 @@ We release **UnifiedReward-Think** -- **the first unified multimodal CoT reward 
 Please refer to the [README.md](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think) for training and inference details.
 
 [2025/11/17] 🔥🔥🔥 We release **UnifiedReward-Think-qwen3vl**-[[2b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-2b)/[4b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-4b)/[8b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-8b)/[32b](https://huggingface.co/CodeGoat24/UnifiedReward-Think-qwen3vl-32b)]. The inference code is provided at [here](https://github.com/CodeGoat24/UnifiedReward/tree/main/UnifiedReward-Think/inference_qwen/UnifiedReward-Think-qwen3vl-inference).
+
+## 🔥🔥🔥 **UnifiedReward-Flex**
+
+<div align="left">
+    <h3 align="left"> 
+Unified Personalized Reward Model for Vision Generation
+    </h3>
+
+<a href="https://codegoat24.github.io/UnifiedReward/flex">
+<img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
+
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-flex)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/CodeGoat24/UnifiedReward-Flex-SFT-90K)
+
+We release **UnifiedReward-Flex** -- **the first unified personalized reward model for vision generation** that couples reward modeling with flexible and context-adaptive reasoning.
 
 ## 🏁 Compared with Current Reward Models
 
