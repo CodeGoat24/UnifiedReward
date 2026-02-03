@@ -37,7 +37,7 @@
     </h3>
 </div>
 
-> [Coming soon!!] [**Unified Personalized Reward Model for Vision Generation**](https://codegoat24.github.io/UnifiedReward/flex): We propose **UnifiedReward-Flex**, a **unified personalized reward model** for vision generation.
+> [**Unified Personalized Reward Model for Vision Generation**](https://codegoat24.github.io/UnifiedReward/flex): We propose **UnifiedReward-Flex**, a **unified personalized reward model** for vision generation that couples reward modeling with flexible and context-adaptive reasoning.
 > <a href="https://codegoat24.github.io/UnifiedReward/flex">
 > <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
 > [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/CodeGoat24/unifiedreward-flex)
@@ -203,6 +203,9 @@ Please refer to the [README.md](https://github.com/CodeGoat24/UnifiedReward/tree
     <h3 align="left"> 
 Unified Personalized Reward Model for Vision Generation
     </h3>
+
+<a href="https://arxiv.org/abs/2602.02380">
+<img src='https://img.shields.io/badge/arXiv-UnifiedReward Flex-blue' alt='Paper PDF'></a>
 
 <a href="https://codegoat24.github.io/UnifiedReward/flex">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
