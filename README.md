@@ -560,6 +560,14 @@ Thanks to all the contributors!
 
 ## ⭐ Citation
 ```bibtex
+@article{unifiedreward-flex,
+  title={Unified Personalized Reward Model for Vision Generation},
+  author={Wang, Yibin and Zang, Yuhang and Han, Feng and Zhou, Yujie and Bu, Jiazi and Jin, Cheng and Wang, Jiaqi},
+  journal={arXiv preprint arXiv:2602.02380},
+  year={2026}
+}
+```
+```bibtex
 @article{unifiedreward-think,
   title={Unified multimodal chain-of-thought reward model through reinforcement fine-tuning},
   author={Wang, Yibin and Li, Zhimin and Zang, Yuhang and Wang, Chunyu and Lu, Qinglin and Jin, Cheng and Wang, Jiaqi},
