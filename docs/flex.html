@@ -147,14 +147,13 @@
               <span class="author-block">
                 <a href="https://yuhangzang.github.io/"><b>Yuhang Zang</b></a><sup>4</sup>,</span>
             <span class="author-block">
-              <a href="https://yuhangzang.github.io/"><b>Feng Han</b></a><sup>1,2</sup>,</span>
-            <span class="author-block">
-               <a href="https://scholar.google.com.hk/citations?user=XLnXvPwAAAAJ&hl=zh-TW"><b>Yujie Zhou</b></a><sup>3,4</sup>,
-            </span>
+              <a href="https://yuhangzang.github.io/"><b>Feng Han</b></a><sup>1,2</sup>,</span><br>
             <span class="author-block">
               <a href="https://scholar.google.com.hk/citations?user=a8h9Di4AAAAJ&hl=zh-TW"><b>Jiazi Bu</b></a><sup>3,4</sup>,
             </span>
-            <br>
+            <span class="author-block">
+               <a href="https://scholar.google.com.hk/citations?user=XLnXvPwAAAAJ&hl=zh-TW"><b>Yujie Zhou</b></a><sup>3,4</sup>,
+            </span>
             <span class="author-block">
               <a href="https://cjinfdu.github.io/"><b>Cheng Jin</b></a><sup>1,2</sup><sup></sup>,</span>
               <span class="author-block">
@@ -306,6 +305,16 @@
         <img src="./static/images/flex/qualitative_image_grpo.png" alt="pipeline" >
       </div>
     </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/quantitative_image_grpo_klein.png" alt="pipeline" >
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/klein_qualitative_results.png" alt="pipeline" >
+      </div>
+    </div>
   </div>
 
 </section>
@@ -328,6 +337,16 @@
     <div class="columns is-centered">
       <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
         <img src="./static/images/flex/qualitative_video_grpo.png" alt="pipeline" >
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/wan22_quantitative_results.png" alt="pipeline" >
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="content has-text-centered" style="margin-top: 1cm; max-width: 90%;">
+        <img src="./static/images/flex/wan22_qualitative_results.png" alt="pipeline" >
       </div>
     </div>
   </div>
@@ -374,7 +393,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video Comparison</h2>
+        <h2 class="title is-3">Video Comparison (Wan2.1-T2V-14B)</h2>
       </div>
     </div>
     <div class="video-compare-group">
@@ -539,6 +558,226 @@
           <figure class="video-compare-card">
             <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
               <source src="static/videos/flex/UnifiedReward-Flex/unicorn%20running%20in%20the%20beautiful%20garden%20with%20rainbow.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="VideoCompareWan22">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Comparison (Wan2.2-T2V-A14B)</h2>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">A cat wearing sunglasses and working as a lifeguard at a pool</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/A%20cat%20wearing%20sunglasses%20and%20working%20as%20a%20lifeguard%20at%20a%20pool.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/A%20cat%20wearing%20sunglasses%20and%20working%20as%20a%20lifeguard%20at%20a%20pool.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">A super robot protecting city</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/A%20super%20robot%20protecting%20city.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/A%20super%20robot%20protecting%20city.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">A super cool giant robot in Cyberpunk Beijing</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/A%20super%20cool%20giant%20robot%20in%20Cyberpunk%20Beijing.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/A%20super%20cool%20giant%20robot%20in%20Cyberpunk%20Beijing.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">Marie Curie real life working in a lab</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/Marie%20Curie%20real%20life%20working%20in%20a%20lab.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/Marie%20Curie%20real%20life%20working%20in%20a%20lab.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">Scarlet Witch fighting a Dragon in Skyrim</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/Scarlet%20Witch%20fighting%20a%20Dragon%20in%20Skyrim.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/Scarlet%20Witch%20fighting%20a%20Dragon%20in%20Skyrim.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">Robot dancing in Times Square</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/Robot%20dancing%20in%20Times%20Square.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/Robot%20dancing%20in%20Times%20Square.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">a magical girl  20 year old  turn into a anti hero</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/a%20magical%20girl%20%2020%20year%20old%20%20turn%20into%20a%20anti%20hero.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/a%20magical%20girl%20%2020%20year%20old%20%20turn%20into%20a%20anti%20hero.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">cyborg samurai robot bunnies fighting in a forest</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/cyborg%20samurai%20robot%20bunnies%20fighting%20in%20a%20forest.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/cyborg%20samurai%20robot%20bunnies%20fighting%20in%20a%20forest.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">carnatic music troupe event on stage, young indian woman in traditional saree sitting with veena, beautiful young indian woman in saree singing, handsome young indian man playing flute</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/carnatic%20music%20troupe%20event%20on%20stage%2C%20young%20indian%20woman%20in%20traditional%20saree%20sitting%20with%20veena%2C%20beautiful%20young%20indian%20woman%20in%20saree%20singing%2C%20handsome%20young%20indian%20man%20playing%20flute.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/carnatic%20music%20troupe%20event%20on%20stage%2C%20young%20indian%20woman%20in%20traditional%20saree%20sitting%20with%20veena%2C%20beautiful%20young%20indian%20woman%20in%20saree%20singing%2C%20handsome%20young%20indian%20man%20playing%20flute.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="video-compare-group">
+      <div class="video-prompt-title">tom cruise iron man putting on the armor</div>
+      <div class="columns is-centered is-variable is-6">
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/Wan22-T2V-A14B/tom%20cruise%20iron%20man%20putting%20on%20the%20armor.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-caption">Wan2.2-T2V-A14B</figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="video-compare-card">
+            <video class="video-compare" controls playsinline muted loop autoplay preload="metadata">
+              <source src="static/videos/flex/UnifiedReward-Flex-Wan22/tom%20cruise%20iron%20man%20putting%20on%20the%20armor.mp4" type="video/mp4">
             </video>
             <figcaption class="video-caption">GRPO w/UnifiedReward-Flex</figcaption>
           </figure>
