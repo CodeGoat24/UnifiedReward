@@ -37,6 +37,62 @@
   <script src="./static/data_public.js" defer=""></script>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .page-toc {
+      position: fixed;
+      left: max(16px, calc((100vw - 1200px) / 2 - 260px));
+      top: 88px;
+      width: 240px;
+      max-height: calc(100vh - 104px);
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid #e9e9e9;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      padding: 12px;
+      z-index: 20;
+    }
+    .page-toc-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: #333;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .page-toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .page-toc-list li {
+      margin: 0 0 4px;
+      padding: 0;
+    }
+    .page-toc-list a {
+      display: block;
+      padding: 6px 8px;
+      border-radius: 6px;
+      color: #444;
+      font-size: 14px;
+      line-height: 1.3;
+      text-decoration: none;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .page-toc-list a:hover {
+      background: #f3f6ff;
+      color: #1f3ea3;
+    }
+    .page-toc-list a.is-active {
+      background: #e9f0ff;
+      color: #1338a1;
+      font-weight: 600;
+    }
+    [data-toc-section] {
+      scroll-margin-top: 84px;
+    }
       .center-container {
             display: flex;
             justify-content: center;
@@ -54,6 +110,10 @@
     .video-compare {
       display: block;
       width: 100%;
+      height: min(28vw, 300px);
+      min-height: 180px;
+      object-fit: contain;
+      background: #000;
       border-radius: 8px;
     }
     .video-caption {
@@ -86,8 +146,20 @@
       text-align: center;
     }
     @media screen and (max-width: 768px) {
+      .page-toc {
+        display: none;
+      }
       .hero.teaser .title.is-3 {
         white-space: normal;
+      }
+      .video-compare {
+        height: min(56vw, 280px);
+        min-height: 160px;
+      }
+    }
+    @media screen and (max-width: 1280px) {
+      .page-toc {
+        display: none;
       }
     }
     @media screen and (min-width: 1024px) {
@@ -120,7 +192,22 @@
   </style>
 
 </head>
-<body>
+<body class="has-side-toc">
+
+<aside class="page-toc" aria-label="Page sections">
+  <div class="page-toc-title">Contents</div>
+  <ul class="page-toc-list">
+    <li><a href="#Top">Top</a></li>
+    <li><a href="#Teaser">Personalized Reasoning</a></li>
+    <li><a href="#RewardCompare">Reward Model Comparison</a></li>
+    <li><a href="#ImageGRPO">Text-to-Image GRPO</a></li>
+    <li><a href="#VideoGRPO">Text-to-Video GRPO</a></li>
+    <li><a href="#TrainingProgress">Training Progress</a></li>
+    <li><a href="#VideoCompare">Video Compare Wan2.1</a></li>
+    <li><a href="#VideoCompareWan22">Video Compare Wan2.2</a></li>
+    <li><a href="#BibTeX">BibTeX</a></li>
+  </ul>
+</aside>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -133,7 +220,7 @@
 </nav>
 
 
-<section class="hero">
+<section class="hero" id="Top" data-toc-section>
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
@@ -234,7 +321,7 @@
 
 
 <!-- Begin Teaser -->
-<section class="hero teaser">
+<section class="hero teaser" id="Teaser" data-toc-section>
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -259,7 +346,7 @@
 
     <!--/ Abstract. -->
 
-<section class="section">
+<section class="section" id="RewardCompare" data-toc-section>
   <div class="container is-max-desktop" >
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -285,7 +372,7 @@
 
 
 
-<section class="section">
+<section class="section" id="ImageGRPO" data-toc-section>
   <div class="container is-max-desktop" >
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -319,7 +406,7 @@
 
 </section>
 
-<section class="section">
+<section class="section" id="VideoGRPO" data-toc-section>
   <div class="container is-max-desktop" >
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -354,7 +441,7 @@
 </section>
 
 
-<section class="section">
+<section class="section" id="TrainingProgress" data-toc-section>
   <div class="container is-max-desktop" >
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -375,7 +462,7 @@
     
   </div>
 </section>
-<section class="section" id="BibTeX">
+<section class="section" id="BibTeX" data-toc-section>
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
@@ -389,7 +476,7 @@
   </div>
 </section>
 
-<section class="section" id="VideoCompare">
+<section class="section" id="VideoCompare" data-toc-section>
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -567,7 +654,7 @@
   </div>
 </section>
 
-<section class="section" id="VideoCompareWan22">
+<section class="section" id="VideoCompareWan22" data-toc-section>
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -787,4 +874,46 @@
   </div>
 </section>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".page-toc-list a"));
+    var sections = Array.prototype.slice.call(document.querySelectorAll("[data-toc-section]"));
+    if (!tocLinks.length || !sections.length) return;
+
+    var activateLink = function (id) {
+      tocLinks.forEach(function (link) {
+        var isActive = link.getAttribute("href") === "#" + id;
+        link.classList.toggle("is-active", isActive);
+      });
+    };
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            activateLink(entry.target.id);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-35% 0px -55% 0px",
+        threshold: 0
+      }
+    );
+
+    sections.forEach(function (section) {
+      observer.observe(section);
+    });
+
+    tocLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        var targetId = (link.getAttribute("href") || "").replace("#", "");
+        if (targetId) activateLink(targetId);
+      });
+    });
+
+    activateLink("Top");
+  });
+</script>
 </body></html>
