@@ -234,19 +234,10 @@ We release **UnifiedReward-Flex** -- **the first unified personalized reward mod
 
 ##  🔧 Environment Set Up
 
-1. Clone this repository and navigate to the UnifiedReward folder:
+Clone this repository and navigate to the UnifiedReward folder:
 ```bash
 git clone https://github.com/CodeGoat24/UnifiedReward.git
 cd UnifiedReward
-```
-
-2. Install the inference package:
-```bash
-conda create -n unifiedreward python=3.10 -y
-conda activate unifiedreward
-pip install --upgrade pip  
-pip install -e ".[train]"
-pip install flash_attn==2.5.8 --no-build-isolation
 ```
 
 ## 🚀 Inference
@@ -331,6 +322,16 @@ llamafactory-cli train examples/train_full/qwen2_5vl_full_sft.yaml
 ```
 
 ### 2. Training based on LLaVA-Onevision
+
+#### 2.0 Environment Set Up
+
+```bash
+conda create -n unifiedreward python=3.10 -y
+conda activate unifiedreward
+pip install --upgrade pip  
+pip install -e ".[train]"
+pip install flash_attn==2.5.8 --no-build-isolation
+```
 
 #### 2.1 Unified Preference Training Dataset Preparation
 Please download our constructed unified preference dataset from [Huggingface](https://huggingface.co/collections/CodeGoat24/unifiedreward-training-data-67c300d4fd5eff00fa7f1ede) and put it in `./dataset/`.
