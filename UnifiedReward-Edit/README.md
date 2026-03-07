@@ -17,7 +17,7 @@ pip install qwen-vl-utils==0.0.14
 tmux new -s vllm
 
 conda activate vllm
-cd inference_qwen/UnifiedReward-2.0-inference/
+cd UnifiedReward-Edit/
 
 bash vllm_server.sh
 ```
@@ -27,7 +27,7 @@ bash vllm_server.sh
 ```
 tmux new -s infer
 conda activate <infer_env>
-cd inference_qwen/UnifiedReward-2.0-inference/
+cd UnifiedReward-Edit/
 
-python point_score_ACS_image_generation.py
+python edit_pairwise_rank.py
 ```

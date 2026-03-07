@@ -6,7 +6,7 @@
 conda create -n vllm python=3.11 -y
 conda activate vllm
 
-pip install vllm>=0.11.0
+pip install vllm
 
 pip install qwen-vl-utils==0.0.14
 ```
@@ -27,5 +27,5 @@ bash vllm_server.sh
 tmux new -s infer
 conda activate <infer_env>
 
-python qwen3vl_infer_cot_image_understanding.py
+python qwen3_infer_cot_image_understanding.py
 ```

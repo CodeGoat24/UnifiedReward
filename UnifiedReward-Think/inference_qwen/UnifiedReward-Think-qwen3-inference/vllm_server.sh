@@ -1,4 +1,4 @@
-vllm serve CodeGoat24/UnifiedReward-Flex-qwen3vl-8b \
+vllm serve CodeGoat24/UnifiedReward-Think-qwen3vl-8b \
     --host localhost \
     --trust-remote-code \
     --served-model-name UnifiedReward \
@@ -14,7 +14,7 @@ vllm serve CodeGoat24/UnifiedReward-Flex-qwen3vl-8b \
 # Qwen3.5
 export VLLM_DISABLE_FLASHINFER_GDN_PREFILL=1
 export TOKENIZERS_PARALLELISM=false
-vllm serve CodeGoat24/UnifiedReward-Flex-qwen35-9b \
+vllm serve CodeGoat24/UnifiedReward-Think-qwen35-9b \
  --host localhost \
  --port 8080 \
  --trust-remote-code \

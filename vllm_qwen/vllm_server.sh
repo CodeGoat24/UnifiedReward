@@ -1,5 +1,5 @@
 vllm serve CodeGoat24/UnifiedReward-2.0-qwen3vl-8b \
-    --host /ip/address \
+    --host localhost \
     --trust-remote-code \
     --served-model-name UnifiedReward \
     --gpu-memory-utilization 0.9 \
@@ -10,3 +10,18 @@ vllm serve CodeGoat24/UnifiedReward-2.0-qwen3vl-8b \
     --enable-prefix-caching \
     --disable-log-requests \
     --mm_processor_cache_gb=500
+
+# Qwen3.5
+export VLLM_DISABLE_FLASHINFER_GDN_PREFILL=1
+export TOKENIZERS_PARALLELISM=false
+vllm serve CodeGoat24/UnifiedReward-2.0-qwen35-9b \
+ --host localhost \
+ --port 8080 \
+ --trust-remote-code \
+ --served-model-name UnifiedReward \
+ --gpu-memory-utilization 0.95 \
+ --mm-encoder-tp-mode data \
+ --mm-processor-cache-type shm \
+ --enable-prefix-caching \
+ --tensor-parallel-size 8 \
+ --default-chat-template-kwargs '{"enable_thinking": false}'
