@@ -12,7 +12,7 @@
     </h3>
 </div>
 
-> [**UniREditBench: A Unified Reasoning-based Image Editing Benchmark**](https://maplebb.github.io/UniREditBench/): We propose **UniREditBench**, a unified reasoning-based image editing benchmark, and further construct **UniREdit-Data-100K**, a large-scale synthetic dataset with high-quality CoT annotations, and develop **UniREdit-Bagel** by fine-tuning Bagel on this dataset.
+> [**ECCV 2026**] [**UniREditBench: A Unified Reasoning-based Image Editing Benchmark**](https://maplebb.github.io/UniREditBench/): We propose **UniREditBench**, a unified reasoning-based image editing benchmark, and further construct **UniREdit-Data-100K**, a large-scale synthetic dataset with high-quality CoT annotations, and develop **UniREdit-Bagel** by fine-tuning Bagel on this dataset.
 > <a href="https://maplebb.github.io/UniREditBench/">
 > <img src='https://img.shields.io/badge/Website-project page-orange' alt='Project Page'></a>
 > <a href="https://github.com/Maplebb/UniREditBench">
